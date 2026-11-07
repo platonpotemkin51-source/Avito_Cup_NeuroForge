@@ -1,0 +1,13 @@
+{
+  "model": "catboost",
+  "data": {
+    "train_feeds": 200,
+    "val_feeds": 100
+  },
+  "params": {
+    "task_type": "CPU",
+    "num_trees": 20,
+    "eval_metric": "NDCG:type=Base",
+    "thread_count": 4
+  }
+}
