@@ -1,0 +1,12 @@
+{
+  "hypothesis": "B01",
+  "device": "cpu",
+  "params": {
+    "train_feeds": 50000,
+    "val_feeds": 100,
+    "epochs": 5,
+    "batch_size": 2,
+    "threads": 4,
+    "seed": 123
+  }
+}

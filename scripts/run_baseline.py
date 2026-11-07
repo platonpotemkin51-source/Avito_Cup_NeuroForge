@@ -22,7 +22,15 @@ def main():
         prefix = []
     else:
         module.TRAIN_CONFIG.update(config.get('params', {}))
-        prefix = ['--device', config.get('device', 'cpu')]
+        device = config.get('device', 'cpu')
+        if device == 'mps':
+            if not module.torch.backends.mps.is_available():
+                raise RuntimeError('Apple GPU (MPS) is unavailable in this environment')
+            # Extend the organizer CLI in memory; baseline sources stay untouched.
+            for option in module.main.params:
+                if option.name == 'device':
+                    option.type = module.click.Choice(['cpu', 'cuda', 'mps'])
+        prefix = ['--device', device]
     module.main(args=prefix + sys.argv[2:], standalone_mode=False)
 
 if __name__ == '__main__':

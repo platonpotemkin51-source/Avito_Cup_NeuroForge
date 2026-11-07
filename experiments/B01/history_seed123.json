@@ -1,0 +1,54 @@
+{
+  "config": {
+    "train_feeds": 50000,
+    "val_feeds": 100,
+    "epochs": 5,
+    "batch_size": 2,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "width": 64,
+    "layers": 2,
+    "dropout": 0.1,
+    "seed": 123,
+    "threads": 4,
+    "data": "data/competition",
+    "output": "runs/B01-cpu-50k-seed123-01",
+    "device": "cpu"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_logloss": 0.09859050068280828,
+      "val_logloss": 0.07740855671585464,
+      "val_ndcg": 0.3350789492963873
+    },
+    {
+      "epoch": 2,
+      "train_logloss": 0.09710249585919824,
+      "val_logloss": 0.0755057675707368,
+      "val_ndcg": 0.34355671912742103
+    },
+    {
+      "epoch": 3,
+      "train_logloss": 0.0967860632720772,
+      "val_logloss": 0.0756584435081787,
+      "val_ndcg": 0.33716877740746304
+    },
+    {
+      "epoch": 4,
+      "train_logloss": 0.09656432352189863,
+      "val_logloss": 0.0763806693154165,
+      "val_ndcg": 0.3448343182103133
+    },
+    {
+      "epoch": 5,
+      "train_logloss": 0.09644019475136208,
+      "val_logloss": 0.0763917272565168,
+      "val_ndcg": 0.3323932767906316
+    }
+  ],
+  "best_val_logloss": 0.0755057675707368,
+  "train_candidates": 3896275,
+  "val_candidates": 8129,
+  "parameters": 84841
+}

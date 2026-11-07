@@ -1,0 +1,12 @@
+{
+  "logloss": {
+    "catboost_ndcg": 0.32920555402328466,
+    "our_ndcg": 0.32920555402328655,
+    "absolute_difference": 1.887379141862766e-15
+  },
+  "ndcg": {
+    "catboost_ndcg": 0.32825941353629956,
+    "our_ndcg": 0.32825941353629995,
+    "absolute_difference": 3.885780586188048e-16
+  }
+}

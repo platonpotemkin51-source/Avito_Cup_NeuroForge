@@ -1,0 +1,144 @@
+{
+  "B01-cpu-50k-01": {
+    "selected_checkpoints": {
+      "logloss": {
+        "epoch": 4,
+        "train_logloss": 0.09665944779206763,
+        "val_logloss": 0.07501442222111866,
+        "val_ndcg": 0.35297267143289285
+      },
+      "ndcg": {
+        "epoch": 5,
+        "train_logloss": 0.09648604110141029,
+        "val_logloss": 0.0752563688907255,
+        "val_ndcg": 0.35875299652958165
+      }
+    },
+    "full_val": {
+      "feeds": 14423,
+      "logloss_selected_ndcg": 0.3334217073976669,
+      "ndcg_selected_ndcg": 0.3342545686904684,
+      "difference": 0.0008328612928014133,
+      "random_expected_ndcg": 0.28896553912359807
+    },
+    "selection_100": {
+      "feeds": 100,
+      "logloss_selected_ndcg": 0.35297267143289285,
+      "ndcg_selected_ndcg": 0.35875299652958165,
+      "difference": 0.00578032509668896,
+      "random_expected_ndcg": 0.29966027500828646
+    },
+    "remaining_val": {
+      "feeds": 14323,
+      "logloss_selected_ndcg": 0.33328520691567837,
+      "ndcg_selected_ndcg": 0.33408352611671205,
+      "difference": 0.0007983192010337142,
+      "random_expected_ndcg": 0.28889087085658216,
+      "paired_user_bootstrap_95pct": [
+        -0.0011087521703704696,
+        0.0027449042991530208
+      ],
+      "by_utc_day": [
+        {
+          "utc_day": 20717,
+          "feeds": 351,
+          "ndcg": 0.32913445112116874,
+          "control_ndcg": 0.3185170619964918,
+          "difference": 0.010617389124676989
+        },
+        {
+          "utc_day": 20718,
+          "feeds": 7139,
+          "ndcg": 0.33241383109006717,
+          "control_ndcg": 0.33220865302314917,
+          "difference": 0.0002051780669178585
+        },
+        {
+          "utc_day": 20719,
+          "feeds": 389,
+          "ndcg": 0.313322566898124,
+          "control_ndcg": 0.3236920457067259,
+          "difference": -0.010369478808601928
+        },
+        {
+          "utc_day": 20720,
+          "feeds": 6444,
+          "ndcg": 0.33745613493959836,
+          "control_ndcg": 0.3358613827095452,
+          "difference": 0.0015947522300533562
+        }
+      ]
+    }
+  },
+  "B01-cpu-50k-seed123-01": {
+    "selected_checkpoints": {
+      "logloss": {
+        "epoch": 2,
+        "train_logloss": 0.09710249585919824,
+        "val_logloss": 0.0755057675707368,
+        "val_ndcg": 0.34355671912742103
+      },
+      "ndcg": {
+        "epoch": 4,
+        "train_logloss": 0.09656432352189863,
+        "val_logloss": 0.0763806693154165,
+        "val_ndcg": 0.3448343182103133
+      }
+    },
+    "full_val": {
+      "feeds": 14423,
+      "logloss_selected_ndcg": 0.3292055540232893,
+      "ndcg_selected_ndcg": 0.3282594135363015,
+      "difference": -0.0009461404869877236,
+      "random_expected_ndcg": 0.28896553912359807
+    },
+    "selection_100": {
+      "feeds": 100,
+      "logloss_selected_ndcg": 0.34355671912742103,
+      "ndcg_selected_ndcg": 0.3448343182103133,
+      "difference": 0.0012775990828923587,
+      "random_expected_ndcg": 0.29966027500828646
+    },
+    "remaining_val": {
+      "feeds": 14323,
+      "logloss_selected_ndcg": 0.32910535738079727,
+      "ndcg_selected_ndcg": 0.32814369123877996,
+      "difference": -0.0009616661420172577,
+      "random_expected_ndcg": 0.28889087085658216,
+      "paired_user_bootstrap_95pct": [
+        -0.0032318446299021493,
+        0.0012602471012795984
+      ],
+      "by_utc_day": [
+        {
+          "utc_day": 20717,
+          "feeds": 351,
+          "ndcg": 0.31386346053736136,
+          "control_ndcg": 0.3185131927198165,
+          "difference": -0.00464973218245518
+        },
+        {
+          "utc_day": 20718,
+          "feeds": 7139,
+          "ndcg": 0.3268753196477514,
+          "control_ndcg": 0.3300059048917157,
+          "difference": -0.0031305852439644376
+        },
+        {
+          "utc_day": 20719,
+          "feeds": 389,
+          "ndcg": 0.31512351151310186,
+          "control_ndcg": 0.31841383310253996,
+          "difference": -0.003290321589438182
+        },
+        {
+          "utc_day": 20720,
+          "feeds": 6444,
+          "ndcg": 0.3311126725668115,
+          "control_ndcg": 0.32933003833358965,
+          "difference": 0.0017826342332219337
+        }
+      ]
+    }
+  }
+}

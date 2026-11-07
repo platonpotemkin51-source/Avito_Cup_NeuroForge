@@ -1,0 +1,83 @@
+{
+  "selection_100": {
+    "feeds": 100,
+    "unique_users": 98,
+    "mean_candidates": 81.29,
+    "mean_positives": 1.3,
+    "positive_candidate_rate": 0.015992126952884735,
+    "mean_history": 164.31,
+    "empty_history_feeds": 1,
+    "utc_day_counts": [
+      {
+        "utc_day": 20717,
+        "len": 3
+      },
+      {
+        "utc_day": 20718,
+        "len": 50
+      },
+      {
+        "utc_day": 20719,
+        "len": 3
+      },
+      {
+        "utc_day": 20720,
+        "len": 44
+      }
+    ]
+  },
+  "remaining_val": {
+    "feeds": 14323,
+    "unique_users": 13645,
+    "mean_candidates": 96.47713467848914,
+    "mean_positives": 1.525727850310689,
+    "positive_candidate_rate": 0.015814398462342293,
+    "mean_history": 173.3656356908469,
+    "empty_history_feeds": 193,
+    "utc_day_counts": [
+      {
+        "utc_day": 20717,
+        "len": 351
+      },
+      {
+        "utc_day": 20718,
+        "len": 7139
+      },
+      {
+        "utc_day": 20719,
+        "len": 389
+      },
+      {
+        "utc_day": 20720,
+        "len": 6444
+      }
+    ]
+  },
+  "full_val": {
+    "feeds": 14423,
+    "unique_users": 13741,
+    "mean_candidates": 96.37183664979547,
+    "mean_positives": 1.5241627955349095,
+    "positive_candidate_rate": 0.01581543787604202,
+    "mean_history": 173.30284961519794,
+    "empty_history_feeds": 194,
+    "utc_day_counts": [
+      {
+        "utc_day": 20717,
+        "len": 354
+      },
+      {
+        "utc_day": 20718,
+        "len": 7189
+      },
+      {
+        "utc_day": 20719,
+        "len": 392
+      },
+      {
+        "utc_day": 20720,
+        "len": 6488
+      }
+    ]
+  }
+}
