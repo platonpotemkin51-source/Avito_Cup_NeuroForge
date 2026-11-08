@@ -1,0 +1,116 @@
+{
+  "torch": "2.10.0",
+  "platform": "macOS-27.2-arm64-arm-64bit",
+  "mps_available": true,
+  "feeds": 128,
+  "threads": 1,
+  "warmup": "one whole selected-feed pass before each measured phase",
+  "repeats": 2,
+  "limitation": "Concurrent CPU experiments remain active. Small timing sample, not a full-run time prediction. Training benchmark includes loss checks, transfers, backward and AdamW; validation includes three shared NDCG calculations.",
+  "runs": [
+    {
+      "device": "cpu",
+      "batch_size": 32,
+      "probe_max_abs_logit_difference": 0.0,
+      "train": {
+        "warmup_seconds": 0.7503233750030631,
+        "seconds": [
+          0.6319422499946086,
+          0.6233677080017515
+        ],
+        "median_seconds": 0.62765497899818,
+        "feeds_per_second": 203.93369650999162
+      },
+      "validation": {
+        "warmup_seconds": 0.25190708399168216,
+        "seconds": [
+          0.2586005839984864,
+          0.25289883399091195
+        ],
+        "median_seconds": 0.2557497089946992,
+        "feeds_per_second": 500.4893280353762
+      },
+      "host_peak_ram_gib": 1.054229736328125
+    },
+    {
+      "device": "cpu",
+      "batch_size": 64,
+      "probe_max_abs_logit_difference": 0.0,
+      "train": {
+        "warmup_seconds": 0.8953405840002233,
+        "seconds": [
+          0.6605426660098601,
+          0.6679661249945639
+        ],
+        "median_seconds": 0.664254395502212,
+        "feeds_per_second": 192.6972570549949
+      },
+      "validation": {
+        "warmup_seconds": 0.26509066599828657,
+        "seconds": [
+          0.25954754099075217,
+          0.25828524999087676
+        ],
+        "median_seconds": 0.25891639549081447,
+        "feeds_per_second": 494.3680749044764
+      },
+      "host_peak_ram_gib": 1.9411163330078125
+    },
+    {
+      "device": "mps",
+      "batch_size": 32,
+      "probe_max_abs_logit_difference": 1.9073486328125e-06,
+      "train": {
+        "warmup_seconds": 1.9056742090033367,
+        "seconds": [
+          0.27043912500084843,
+          0.27906208399508614
+        ],
+        "median_seconds": 0.2747506044979673,
+        "feeds_per_second": 465.87704596277604
+      },
+      "validation": {
+        "warmup_seconds": 0.15310833300463855,
+        "seconds": [
+          0.10473724998882972,
+          0.09715070799575187
+        ],
+        "median_seconds": 0.1009439789922908,
+        "feeds_per_second": 1268.0300625931884
+      },
+      "host_peak_ram_gib": 1.9411163330078125,
+      "post_pass_driver_allocated_gib": 1.8353271484375
+    },
+    {
+      "device": "mps",
+      "batch_size": 64,
+      "probe_max_abs_logit_difference": 1.9073486328125e-06,
+      "train": {
+        "warmup_seconds": 0.9191978339949856,
+        "seconds": [
+          0.25460562501393724,
+          0.2487576660059858
+        ],
+        "median_seconds": 0.2516816455099615,
+        "feeds_per_second": 508.5790016218476
+      },
+      "validation": {
+        "warmup_seconds": 0.1105528750049416,
+        "seconds": [
+          0.08432137499039527,
+          0.08310987500590272
+        ],
+        "median_seconds": 0.083715624998149,
+        "feeds_per_second": 1528.9857777784034
+      },
+      "host_peak_ram_gib": 1.9411163330078125,
+      "post_pass_driver_allocated_gib": 3.7064971923828125
+    }
+  ],
+  "candidate_length_quantiles": [
+    5.0,
+    52.0,
+    243.6,
+    287.0
+  ]
+}

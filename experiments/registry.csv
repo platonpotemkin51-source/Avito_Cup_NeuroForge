@@ -6,8 +6,8 @@ A04,A,proposed,,,,,,,
 A05,A,proposed,,,,,,,
 A06,A,proposed,,,,,,,
 A07,A,proposed,,,,,,,
-B01,B,completed,same-run minimum Logloss,configs/B01_cpu_50k.json;configs/B01_cpu_50k_seed123.json,,0.3342545686904662,,docs/B01_RESULTS.md,Two seeds 42/123; full-val differences +0.000833/-0.000946; remaining-val user-bootstrap CIs include zero; stable gain not confirmed; full val examined; no service/ensemble result
-B02,B,completed,same architecture; zero history inputs; matched seed,configs/B02_cpu_50k.json;configs/B02_cpu_50k_seed123.json,,0.335086528630719,,docs/B02_RESULTS.md,"Closed without acceptance: seed42 +0.00136577; seed123 +0.00000535 practically tied, CI [-0.00132875,0.00131651]; same full val for selection/evaluation; 20 tests; no ensemble/service result"
+B01,B,completed,same-run minimum Logloss,,,0.3342545686904662,,docs/B01_RESULTS.md,Historical B01 selection100 comparison no stable gain; trial code/weights removed; full NDCG selection retained as reference and captain integration requirement
+B02,B,completed,matched mean recent32 cosine,configs/B02_top3.json,4d0cdd5,0.3561699889322395,,docs/B02_RESULTS.md,"Closed: retained top3 +0.00385257/+0.00448729 on two seeds; same full val for selection/evaluation; failed implementations removed; source commit is measured run base, delivery commit via git log"
 B03,B,proposed,,,,,,,
 B04,B,proposed,,,,,,,
 B05,B,proposed,,,,,,,
@@ -20,4 +20,7 @@ C04,C,proposed,,,,,,,
 C05,C,proposed,,,,,,,
 C06,C,proposed,,,,,,,
 C07,C,proposed,,,,,,,
-FULL01,B,proposed,B02 control without history,configs/full_cpu_control.json,,,,docs/FULL_CPU.md,"Planned full train only, one CPU epoch; full val and test validation; not launched"
+FULL01,B,deferred,B02 control without history,,,,,docs/CAPTAIN_AI_HANDOFF.md,Old full CPU control launcher retired; full-data B01+B02 training delegated to captain after profile and budget approval
+B02_EXT,B,completed,matched zero-history and mean-history baselines,,,,,docs/B02_RESULTS.md,Historical stages consolidated in experiments/B02/exploratory_trials.json; implementations/weights/caches removed
+B02_DATA,B,completed,recent mean similarity,,,,,docs/B02_RESULTS.md,Train-only user-disjoint50k study led to top3; aggregated evidence in experiments/B02/data_study.json; exploratory feature branches removed
+B02_FINAL,B,completed,matched mean recent32 cosine,experiments/B02/measured_plan.json,,0.3561699889322395,,docs/B02_RESULTS.md,8 completed models; retained top3 only; all metrics/source hashes in experiments/B02/final_audit.json; report docs/B02_RESULTS.md

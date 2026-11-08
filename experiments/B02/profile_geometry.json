@@ -1,0 +1,18 @@
+{
+  "training_feeds": 10000,
+  "usable_profiles": 9894,
+  "center_norm": 0.5554999113082886,
+  "profile_norm_median": 0.7472881078720093,
+  "random_user_profile_cosine_quantiles": [
+    0.3995868802070618,
+    0.5405612885951996,
+    0.7016042351722718
+  ],
+  "centered_profile_norm_quantiles": [
+    0.37646964788436893,
+    0.4970226287841797,
+    0.6570051193237305
+  ],
+  "target_used": false,
+  "validation_used_for_fit": false
+}

@@ -1,0 +1,38 @@
+{
+  "independent_catboost_ndcg": {
+    "recent32": 0.3505839198762485,
+    "recent32_novelty": 0.3508297870335746
+  },
+  "paired_comparison": {
+    "feeds": 14423,
+    "candidates": 1389971,
+    "reference": "/Users/artemgolubev/Programming/Avito ML Cup/runs/B02-extensions/novelty_rule/recent32.parquet",
+    "candidate": "/Users/artemgolubev/Programming/Avito ML Cup/runs/B02-extensions/novelty_rule/recent32_novelty.parquet",
+    "reference_ndcg": 0.35058391987625015,
+    "candidate_ndcg": 0.35082978703357676,
+    "difference": 0.000245867157326511,
+    "paired_user_bootstrap_95pct": [
+      -0.0006549339575442053,
+      0.0011333631431068572
+    ],
+    "slice_by_history": [
+      {
+        "slice": "1-32",
+        "feeds": 873,
+        "difference": 0.0
+      },
+      {
+        "slice": "33-256",
+        "feeds": 13356,
+        "difference": 0.0002655092849745638
+      },
+      {
+        "slice": "empty",
+        "feeds": 194,
+        "difference": 0.0
+      }
+    ],
+    "limitation": "Exploratory validation comparison, same data used repeatedly; interval conditional on fixed selected score rules, not corrected for model search."
+  },
+  "limitation": "Exploratory validation experiment; fixed weight cap3, temperature0.2, window32 chosen before results. No search across thresholds or weights."
+}

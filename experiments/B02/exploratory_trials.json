@@ -1,0 +1,3582 @@
+{
+  "runs/B02-extensions/screen_type_mean": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "type_mean",
+      "type_cache": "cache/B02-event-screen-v1",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.09752023507149869,
+      "ndcg": 0.3282554349246769,
+      "ndcg_at_10": 0.18859031759597894,
+      "ndcg_at_30": 0.25868071735409803,
+      "logloss": 0.07543812305296359,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10023598163596197,
+        "ndcg": 0.3273249052684065,
+        "ndcg_at_10": 0.18686660415928028,
+        "ndcg_at_30": 0.2580595930628411,
+        "logloss": 0.07601190853504972,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09801479364824267,
+        "ndcg": 0.32782614391071035,
+        "ndcg_at_10": 0.18817256549784397,
+        "ndcg_at_30": 0.2583930722078288,
+        "logloss": 0.07517122537457976,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09752023507149869,
+        "ndcg": 0.3282554349246769,
+        "ndcg_at_10": 0.18859031759597894,
+        "ndcg_at_30": 0.25868071735409803,
+        "logloss": 0.07543812305296359,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09702911627423623,
+        "ndcg": 0.32244797572918965,
+        "ndcg_at_10": 0.18160146854574225,
+        "ndcg_at_30": 0.25245438809082343,
+        "logloss": 0.07633176808366944,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09684794073029304,
+        "ndcg": 0.32430045277659225,
+        "ndcg_at_10": 0.1844788137934641,
+        "ndcg_at_30": 0.2541839217074594,
+        "logloss": 0.07519926522769332,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "1403fd64c24b23e820da7f4d11d2dc1e521bdbca509d93e403be7bb4f90f5f13",
+        "src/neuroforge/models/neural/history_mean.py": "c8acd083a978293bf42b563076f040e04ec76e6706034fd19360dcce7f8dd80f",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 150.0356204580021,
+      "peak_ram_gib": 1.7078857421875,
+      "parameters": 93108
+    }
+  },
+  "runs/B02-extensions/screen_unit_mean": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "unit_mean",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 1,
+      "train_logloss": 0.10025780211451217,
+      "ndcg": 0.32750802321192585,
+      "ndcg_at_10": 0.1872601326123774,
+      "ndcg_at_30": 0.25805349455062904,
+      "logloss": 0.07678161875053599,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10025780211451217,
+        "ndcg": 0.32750802321192585,
+        "ndcg_at_10": 0.1872601326123774,
+        "ndcg_at_30": 0.25805349455062904,
+        "logloss": 0.07678161875053599,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09808008277447701,
+        "ndcg": 0.3271945968862779,
+        "ndcg_at_10": 0.18732233247327934,
+        "ndcg_at_30": 0.2576079951478664,
+        "logloss": 0.07512975961432813,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09759162592945267,
+        "ndcg": 0.3274360199602955,
+        "ndcg_at_10": 0.18776286033518397,
+        "ndcg_at_30": 0.25808655777783585,
+        "logloss": 0.07556040264885598,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09706168358798173,
+        "ndcg": 0.32241489248983585,
+        "ndcg_at_10": 0.18152832406165892,
+        "ndcg_at_30": 0.25243169319290115,
+        "logloss": 0.07631165673343834,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09683071673816504,
+        "ndcg": 0.32256497067937845,
+        "ndcg_at_10": 0.18163361976871423,
+        "ndcg_at_30": 0.2522366183310936,
+        "logloss": 0.07531395443514782,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "592aee18177d10cc7f3bd90bf573fe1ba36932c506b607fe2df15e84a66f6195",
+        "src/neuroforge/models/neural/history_mean.py": "889c31c83b5c8e4e6d2dc03369eb65b32583c213110af66a62cc4c35be0fa10d",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "14e8f9b1b137341b88e93b90afbe87716feab06ff8494d9026651867c88c32e2"
+      },
+      "seconds": 147.60987829099759,
+      "peak_ram_gib": 1.6064453125,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/screen_cos_user_control": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "user",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.09742466782171781,
+      "ndcg": 0.33609643436872905,
+      "ndcg_at_10": 0.19898429028311945,
+      "ndcg_at_30": 0.26831064520924813,
+      "logloss": 0.07551911704212742,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09999008933432021,
+        "ndcg": 0.33026320433512946,
+        "ndcg_at_10": 0.1915459012261802,
+        "ndcg_at_30": 0.26144828375857626,
+        "logloss": 0.07662996334677837,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09805614325111134,
+        "ndcg": 0.33426780229435354,
+        "ndcg_at_10": 0.1966943835142828,
+        "ndcg_at_30": 0.26644597093007144,
+        "logloss": 0.07517104228861851,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09742466782171781,
+        "ndcg": 0.33609643436872905,
+        "ndcg_at_10": 0.19898429028311945,
+        "ndcg_at_30": 0.26831064520924813,
+        "logloss": 0.07551911704212742,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09685337337012563,
+        "ndcg": 0.33515476652680304,
+        "ndcg_at_10": 0.19808647394267617,
+        "ndcg_at_30": 0.26773959477147435,
+        "logloss": 0.0758909315900837,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09663952385811929,
+        "ndcg": 0.3356687274089626,
+        "ndcg_at_10": 0.19887989503966572,
+        "ndcg_at_30": 0.2684474773633394,
+        "logloss": 0.07490136006807252,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 170.36970691599709,
+      "peak_ram_gib": 1.5027923583984375,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/screen_cos_user_history_mean": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "user_history",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 4,
+      "train_logloss": 0.09676408724275576,
+      "ndcg": 0.3386977229764579,
+      "ndcg_at_10": 0.20230497516795376,
+      "ndcg_at_30": 0.2714199457130673,
+      "logloss": 0.07605259886780567,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.0997913768386105,
+        "ndcg": 0.3300207355510235,
+        "ndcg_at_10": 0.1910128383088072,
+        "ndcg_at_30": 0.2616725309404905,
+        "logloss": 0.07640801177444272,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09795845434356232,
+        "ndcg": 0.336990422260095,
+        "ndcg_at_10": 0.20003651240314763,
+        "ndcg_at_30": 0.26975040310970366,
+        "logloss": 0.07529942176038597,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09731099574381774,
+        "ndcg": 0.3373372883701379,
+        "ndcg_at_10": 0.20063719041836603,
+        "ndcg_at_30": 0.27022988943109105,
+        "logloss": 0.07539376542152854,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09676408724275576,
+        "ndcg": 0.3386977229764579,
+        "ndcg_at_10": 0.20230497516795376,
+        "ndcg_at_30": 0.2714199457130673,
+        "logloss": 0.07605259886780567,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09658741114556907,
+        "ndcg": 0.3382353673192014,
+        "ndcg_at_10": 0.20288410835126652,
+        "ndcg_at_30": 0.2714366845736215,
+        "logloss": 0.07475185457237789,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 171.19680412500747,
+      "peak_ram_gib": 1.5421142578125,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_cos_user_control_s42": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "user",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 5,
+      "train_logloss": 0.09613394814038113,
+      "ndcg": 0.34996472513492755,
+      "ndcg_at_10": 0.2165448582637057,
+      "ndcg_at_30": 0.28496140202941,
+      "logloss": 0.07412984374888587,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09834037999780708,
+        "ndcg": 0.34278124529438403,
+        "ndcg_at_10": 0.20672425017558002,
+        "ndcg_at_30": 0.2762805308946934,
+        "logloss": 0.075562220067555,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09690620434644064,
+        "ndcg": 0.34506396028005276,
+        "ndcg_at_10": 0.21085056212512673,
+        "ndcg_at_30": 0.2800379657720136,
+        "logloss": 0.07498998648369189,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09650326373433207,
+        "ndcg": 0.34808775397451847,
+        "ndcg_at_10": 0.21441483762602162,
+        "ndcg_at_30": 0.28273957739999966,
+        "logloss": 0.07448377238519742,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09627061459419797,
+        "ndcg": 0.3493922593510657,
+        "ndcg_at_10": 0.21671382488434726,
+        "ndcg_at_30": 0.2850258052687242,
+        "logloss": 0.0739941586315838,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09613394814038113,
+        "ndcg": 0.34996472513492755,
+        "ndcg_at_10": 0.2165448582637057,
+        "ndcg_at_30": 0.28496140202941,
+        "logloss": 0.07412984374888587,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 725.3628581669909,
+      "peak_ram_gib": 3.0189056396484375,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/screen_type_weighted": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "type_weighted",
+      "type_cache": "cache/B02-event-screen-v1",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.09803003926781087,
+      "ndcg": 0.327468291118633,
+      "ndcg_at_10": 0.18776876914161073,
+      "ndcg_at_30": 0.2578740277914331,
+      "logloss": 0.07515108416445727,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10018102512554095,
+        "ndcg": 0.3265321262248657,
+        "ndcg_at_10": 0.18619620195957678,
+        "ndcg_at_30": 0.2568534607549927,
+        "logloss": 0.07656556823764851,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09803003926781087,
+        "ndcg": 0.327468291118633,
+        "ndcg_at_10": 0.18776876914161073,
+        "ndcg_at_30": 0.2578740277914331,
+        "logloss": 0.07515108416445727,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09758004370773499,
+        "ndcg": 0.32711069599321946,
+        "ndcg_at_10": 0.18722095539110328,
+        "ndcg_at_30": 0.25746902228859253,
+        "logloss": 0.07541296006167039,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09710834756107979,
+        "ndcg": 0.32192307292387123,
+        "ndcg_at_10": 0.18121082176886974,
+        "ndcg_at_30": 0.2519415740994531,
+        "logloss": 0.07602460194293865,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09689170479690025,
+        "ndcg": 0.32464451730611726,
+        "ndcg_at_10": 0.18473682744813957,
+        "ndcg_at_30": 0.2547192569755534,
+        "logloss": 0.0751777141463718,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "1403fd64c24b23e820da7f4d11d2dc1e521bdbca509d93e403be7bb4f90f5f13",
+        "src/neuroforge/models/neural/history_mean.py": "c8acd083a978293bf42b563076f040e04ec76e6706034fd19360dcce7f8dd80f",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 159.23814045901236,
+      "peak_ram_gib": 1.743927001953125,
+      "parameters": 93108
+    }
+  },
+  "runs/B02-extensions/screen_control": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.09758156321417852,
+      "ndcg": 0.32820843351926077,
+      "ndcg_at_10": 0.18811343542815778,
+      "ndcg_at_30": 0.2585145670121897,
+      "logloss": 0.07574385509420256,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.1003932765134441,
+        "ndcg": 0.3267940521314462,
+        "ndcg_at_10": 0.18634669097090636,
+        "ndcg_at_30": 0.25734428031708667,
+        "logloss": 0.0764954086710152,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09811363463339248,
+        "ndcg": 0.3268956027421507,
+        "ndcg_at_10": 0.18698818010925172,
+        "ndcg_at_30": 0.2571555506151868,
+        "logloss": 0.07544316656978596,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09758156321417852,
+        "ndcg": 0.32820843351926077,
+        "ndcg_at_10": 0.18811343542815778,
+        "ndcg_at_30": 0.2585145670121897,
+        "logloss": 0.07574385509420256,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.0970922482805829,
+        "ndcg": 0.32438205272553505,
+        "ndcg_at_10": 0.1835169037006649,
+        "ndcg_at_30": 0.25445551966258156,
+        "logloss": 0.07606976822061688,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09694832580514973,
+        "ndcg": 0.3254175854759975,
+        "ndcg_at_10": 0.18551484529995968,
+        "ndcg_at_30": 0.2555134127615383,
+        "logloss": 0.07518362435545246,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "592aee18177d10cc7f3bd90bf573fe1ba36932c506b607fe2df15e84a66f6195",
+        "src/neuroforge/models/neural/history_mean.py": "889c31c83b5c8e4e6d2dc03369eb65b32583c213110af66a62cc4c35be0fa10d",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "14e8f9b1b137341b88e93b90afbe87716feab06ff8494d9026651867c88c32e2"
+      },
+      "seconds": 149.50038908299757,
+      "peak_ram_gib": 1.6432952880859375,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/screen_cos_user_recent32": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "candidate_features": "user",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.0973436801038349,
+      "ndcg": 0.3368185687869723,
+      "ndcg_at_10": 0.20021997779768527,
+      "ndcg_at_30": 0.26943440492909154,
+      "logloss": 0.07561024549441345,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09980649989530055,
+        "ndcg": 0.33089542114676523,
+        "ndcg_at_10": 0.19165633733569495,
+        "ndcg_at_30": 0.26214840003293366,
+        "logloss": 0.07573056787821705,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09800295150808948,
+        "ndcg": 0.3344520300081297,
+        "ndcg_at_10": 0.19692090805431167,
+        "ndcg_at_30": 0.2670786550370239,
+        "logloss": 0.07517534984270374,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.0973436801038349,
+        "ndcg": 0.3368185687869723,
+        "ndcg_at_10": 0.20021997779768527,
+        "ndcg_at_30": 0.26943440492909154,
+        "logloss": 0.07561024549441345,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.0968144367332564,
+        "ndcg": 0.33635398528331945,
+        "ndcg_at_10": 0.19951908920773828,
+        "ndcg_at_30": 0.26900877854029653,
+        "logloss": 0.07578132575906694,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09663598219234035,
+        "ndcg": 0.33420533810946035,
+        "ndcg_at_10": 0.1975275331334655,
+        "ndcg_at_30": 0.26680424730163527,
+        "logloss": 0.07492997071712156,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 168.73098254100478,
+      "peak_ram_gib": 1.5073089599609375,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/screen_cos_zero_control": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "zero",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.09810318906366139,
+      "ndcg": 0.3278485530617626,
+      "ndcg_at_10": 0.1881046268338633,
+      "ndcg_at_30": 0.25878928345711344,
+      "logloss": 0.07564030015691438,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09989644402396358,
+        "ndcg": 0.32629496713874495,
+        "ndcg_at_10": 0.18578875086873975,
+        "ndcg_at_30": 0.2568406918193563,
+        "logloss": 0.07634805194924217,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09810318906366139,
+        "ndcg": 0.3278485530617626,
+        "ndcg_at_10": 0.1881046268338633,
+        "ndcg_at_30": 0.25878928345711344,
+        "logloss": 0.07564030015691438,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09750703378785175,
+        "ndcg": 0.3274289972527971,
+        "ndcg_at_10": 0.1873438391853556,
+        "ndcg_at_30": 0.2579117906561231,
+        "logloss": 0.07599411671700305,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.0970074707314799,
+        "ndcg": 0.32607136365341255,
+        "ndcg_at_10": 0.1861565252070252,
+        "ndcg_at_30": 0.2565854226805775,
+        "logloss": 0.07646431011952805,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09683411993971561,
+        "ndcg": 0.32471378132508416,
+        "ndcg_at_10": 0.1845846444678029,
+        "ndcg_at_30": 0.2545205157270065,
+        "logloss": 0.07546447939187766,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 167.82230087500648,
+      "peak_ram_gib": 1.6060028076171875,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_cos_user_history_mean_s42": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "user_history",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 5,
+      "train_logloss": 0.09611245157410774,
+      "ndcg": 0.35009010525254747,
+      "ndcg_at_10": 0.21741960060804957,
+      "ndcg_at_30": 0.28596789639617853,
+      "logloss": 0.07411672530247063,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09820167655077085,
+        "ndcg": 0.3430129882383611,
+        "ndcg_at_10": 0.20780230232106597,
+        "ndcg_at_30": 0.2773766243855998,
+        "logloss": 0.07561133512470111,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09684369745165439,
+        "ndcg": 0.3432512863510589,
+        "ndcg_at_10": 0.20762244509745442,
+        "ndcg_at_30": 0.27824713820527663,
+        "logloss": 0.07476699963786514,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09645822343747669,
+        "ndcg": 0.34728794327970103,
+        "ndcg_at_10": 0.2136602786458216,
+        "ndcg_at_30": 0.2820212324239448,
+        "logloss": 0.0745270363815152,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09625899930236152,
+        "ndcg": 0.34866470114922604,
+        "ndcg_at_10": 0.21516449906315993,
+        "ndcg_at_30": 0.2840977591997478,
+        "logloss": 0.0740194417808007,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09611245157410774,
+        "ndcg": 0.35009010525254747,
+        "ndcg_at_10": 0.21741960060804957,
+        "ndcg_at_30": 0.28596789639617853,
+        "logloss": 0.07411672530247063,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 636.9835012910044,
+      "peak_ram_gib": 3.0197601318359375,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_cos_user_control_s123": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 123,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "user",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.09691360950167982,
+      "ndcg": 0.34842877146436707,
+      "ndcg_at_10": 0.21602303946498005,
+      "ndcg_at_30": 0.2835812614496445,
+      "logloss": 0.07430803093218456,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09831359959533767,
+        "ndcg": 0.34197632315014714,
+        "ndcg_at_10": 0.2067627350361755,
+        "ndcg_at_30": 0.2755051923594864,
+        "logloss": 0.07868309474261567,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09691360950167982,
+        "ndcg": 0.34842877146436707,
+        "ndcg_at_10": 0.21602303946498005,
+        "ndcg_at_30": 0.2835812614496445,
+        "logloss": 0.07430803093218456,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09654632164224262,
+        "ndcg": 0.3476045573708505,
+        "ndcg_at_10": 0.21372482727125688,
+        "ndcg_at_30": 0.28260811288947385,
+        "logloss": 0.07489177525580412,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09635836584914866,
+        "ndcg": 0.3479878751928372,
+        "ndcg_at_10": 0.2149673882377289,
+        "ndcg_at_30": 0.2838907645205725,
+        "logloss": 0.07501827118818925,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09615101579857804,
+        "ndcg": 0.34729554405081003,
+        "ndcg_at_10": 0.21387695331122128,
+        "ndcg_at_30": 0.2826602887768425,
+        "logloss": 0.0742682868006246,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 652.819277165996,
+      "peak_ram_gib": 3.0516204833984375,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_cos_user_history_recent32_s123": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 123,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "candidate_features": "user_history",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 4,
+      "train_logloss": 0.09629837138303209,
+      "ndcg": 0.35029736183683563,
+      "ndcg_at_10": 0.21769370411748384,
+      "ndcg_at_30": 0.28591240359653936,
+      "logloss": 0.0744728016015471,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09821891234268977,
+        "ndcg": 0.3446478878335621,
+        "ndcg_at_10": 0.2107083299104201,
+        "ndcg_at_30": 0.279085636326483,
+        "logloss": 0.07787395176986905,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09683311799950345,
+        "ndcg": 0.3489415531196474,
+        "ndcg_at_10": 0.21624220625609505,
+        "ndcg_at_30": 0.28422157178537055,
+        "logloss": 0.07422692040947809,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09647429170997932,
+        "ndcg": 0.34828863807502713,
+        "ndcg_at_10": 0.21459748461708672,
+        "ndcg_at_30": 0.28390453300759727,
+        "logloss": 0.07501966524556018,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09629837138303209,
+        "ndcg": 0.35029736183683563,
+        "ndcg_at_10": 0.21769370411748384,
+        "ndcg_at_30": 0.28591240359653936,
+        "logloss": 0.0744728016015471,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09610317595791394,
+        "ndcg": 0.34885638291874593,
+        "ndcg_at_10": 0.21494370586260894,
+        "ndcg_at_30": 0.2846745501091898,
+        "logloss": 0.07411557317845363,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 617.1600092500012,
+      "peak_ram_gib": 3.054168701171875,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_cos_zero_control_s42": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "zero",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 4,
+      "train_logloss": 0.09659301186269915,
+      "ndcg": 0.3317926273586418,
+      "ndcg_at_10": 0.19412856900881462,
+      "ndcg_at_30": 0.2633394024632735,
+      "logloss": 0.07475071204705303,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09843115291909023,
+        "ndcg": 0.32996697654690116,
+        "ndcg_at_10": 0.19035886696453647,
+        "ndcg_at_30": 0.2609977524419574,
+        "logloss": 0.07576035003426032,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09714441943383938,
+        "ndcg": 0.3253442606493297,
+        "ndcg_at_10": 0.18480072902926975,
+        "ndcg_at_30": 0.2559094112217477,
+        "logloss": 0.07566319525719256,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09679295121940681,
+        "ndcg": 0.3287285504910204,
+        "ndcg_at_10": 0.19011297650160303,
+        "ndcg_at_30": 0.2594606015660047,
+        "logloss": 0.07533576927089579,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09659301186269915,
+        "ndcg": 0.3317926273586418,
+        "ndcg_at_10": 0.19412856900881462,
+        "ndcg_at_30": 0.2633394024632735,
+        "logloss": 0.07475071204705303,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.0964529922487298,
+        "ndcg": 0.33163378458140813,
+        "ndcg_at_10": 0.19327451223717132,
+        "ndcg_at_30": 0.2632519622481588,
+        "logloss": 0.07477200477398431,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 721.3738882920006,
+      "peak_ram_gib": 3.03802490234375,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/screen_novelty_recent32_novelty": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-novelty-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32_novelty",
+      "candidate_features": "user_history",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.09733961952810927,
+      "ndcg": 0.33945781482918197,
+      "ndcg_at_10": 0.20291117145046353,
+      "ndcg_at_30": 0.2725143442428855,
+      "logloss": 0.07516574623768503,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09976037586108846,
+        "ndcg": 0.33238159270334955,
+        "ndcg_at_10": 0.19417333283642144,
+        "ndcg_at_30": 0.26420264977633645,
+        "logloss": 0.07567495580462674,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09788044172606708,
+        "ndcg": 0.3378089437203397,
+        "ndcg_at_10": 0.20188092952942188,
+        "ndcg_at_30": 0.2708670948216541,
+        "logloss": 0.0752211904953993,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09733961952810927,
+        "ndcg": 0.33945781482918197,
+        "ndcg_at_10": 0.20291117145046353,
+        "ndcg_at_30": 0.2725143442428855,
+        "logloss": 0.07516574623768503,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09682937493024701,
+        "ndcg": 0.33745587421166817,
+        "ndcg_at_10": 0.2012097186134077,
+        "ndcg_at_30": 0.27052469365659076,
+        "logloss": 0.07576341887266758,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09652892184966004,
+        "ndcg": 0.33929608091036023,
+        "ndcg_at_10": 0.2043706050932965,
+        "ndcg_at_30": 0.2728684106379234,
+        "logloss": 0.07480461636957472,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 210.81652516699978,
+      "peak_ram_gib": 1.474151611328125,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_cos_user_history_recent32_s42": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "candidate_features": "user_history",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 4,
+      "train_logloss": 0.09626421862953943,
+      "ndcg": 0.3505508818353611,
+      "ndcg_at_10": 0.2181664872199235,
+      "ndcg_at_30": 0.2859827175326763,
+      "logloss": 0.07400008169769748,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09817593769382345,
+        "ndcg": 0.3443981310007397,
+        "ndcg_at_10": 0.20933989214153448,
+        "ndcg_at_30": 0.27850705558827904,
+        "logloss": 0.07560460441955513,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09685271204366754,
+        "ndcg": 0.3442925715865155,
+        "ndcg_at_10": 0.2096077912214936,
+        "ndcg_at_30": 0.27923815851651074,
+        "logloss": 0.07480833555539401,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09646762033398346,
+        "ndcg": 0.34657562194839353,
+        "ndcg_at_10": 0.21257168247627622,
+        "ndcg_at_30": 0.2815840236125241,
+        "logloss": 0.0743916530864762,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09626421862953943,
+        "ndcg": 0.3505508818353611,
+        "ndcg_at_10": 0.2181664872199235,
+        "ndcg_at_30": 0.2859827175326763,
+        "logloss": 0.07400008169769748,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09613076014103843,
+        "ndcg": 0.34821001881169,
+        "ndcg_at_10": 0.21454082873965485,
+        "ndcg_at_30": 0.2837151280021895,
+        "logloss": 0.07416961868717033,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 625.6645650420105,
+      "peak_ram_gib": 3.1234893798828125,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_user_similarity_s42": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "user_similarity",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 4,
+      "train_logloss": 0.09656458902387768,
+      "ndcg": 0.3341527439310363,
+      "ndcg_at_10": 0.19734692822650848,
+      "ndcg_at_30": 0.26611016049737923,
+      "logloss": 0.07477290554537323,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09857049732080092,
+        "ndcg": 0.3289117456931265,
+        "ndcg_at_10": 0.18821010640763366,
+        "ndcg_at_30": 0.2597282566428759,
+        "logloss": 0.07563847379064252,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09715134226721531,
+        "ndcg": 0.3291987503893048,
+        "ndcg_at_10": 0.18979870197283047,
+        "ndcg_at_30": 0.2601246582159616,
+        "logloss": 0.07531664591699501,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09678001029161337,
+        "ndcg": 0.32982558350764135,
+        "ndcg_at_10": 0.1911117421245266,
+        "ndcg_at_30": 0.2610342507509547,
+        "logloss": 0.07500199842629299,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09656458902387768,
+        "ndcg": 0.3341527439310363,
+        "ndcg_at_10": 0.19734692822650848,
+        "ndcg_at_30": 0.26611016049737923,
+        "logloss": 0.07477290554537323,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09641710595367066,
+        "ndcg": 0.3320517402395919,
+        "ndcg_at_10": 0.19417728664245618,
+        "ndcg_at_30": 0.2630984404362466,
+        "logloss": 0.07484172208173576,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 502.48996566599817,
+      "peak_ram_gib": 3.206878662109375,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/confirm_control_s42": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 4,
+      "train_logloss": 0.0965737155514095,
+      "ndcg": 0.3335382119957368,
+      "ndcg_at_10": 0.19668883073151117,
+      "ndcg_at_30": 0.265851407274569,
+      "logloss": 0.0748526421250803,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09858307850419308,
+        "ndcg": 0.3287290962056579,
+        "ndcg_at_10": 0.18840955117166933,
+        "ndcg_at_30": 0.25976948780671366,
+        "logloss": 0.07652005660877055,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09722826407522692,
+        "ndcg": 0.32943163448187684,
+        "ndcg_at_10": 0.1898904584045558,
+        "ndcg_at_30": 0.26033966749126397,
+        "logloss": 0.07574951232285697,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.0968354836156683,
+        "ndcg": 0.3307204760243649,
+        "ndcg_at_10": 0.19181867901620397,
+        "ndcg_at_30": 0.26127662234685295,
+        "logloss": 0.07519077013027577,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.0965737155514095,
+        "ndcg": 0.3335382119957368,
+        "ndcg_at_10": 0.19668883073151117,
+        "ndcg_at_30": 0.265851407274569,
+        "logloss": 0.0748526421250803,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09641025984243892,
+        "ndcg": 0.33347922616218645,
+        "ndcg_at_10": 0.19599848637614603,
+        "ndcg_at_30": 0.26535033008901515,
+        "logloss": 0.0747795929737283,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 549.738011124995,
+      "peak_ram_gib": 3.1322479248046875,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/confirm_user_similarity_s123": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 123,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "user_similarity",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.0971525160298774,
+      "ndcg": 0.33358424360044553,
+      "ndcg_at_10": 0.1956166249996735,
+      "ndcg_at_30": 0.26562846121179673,
+      "logloss": 0.07488083563548446,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.0985003947421115,
+        "ndcg": 0.3314611696317191,
+        "ndcg_at_10": 0.1930038874990702,
+        "ndcg_at_30": 0.2622680429442678,
+        "logloss": 0.0785731314821021,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.0971525160298774,
+        "ndcg": 0.33358424360044553,
+        "ndcg_at_10": 0.1956166249996735,
+        "ndcg_at_30": 0.26562846121179673,
+        "logloss": 0.07488083563548446,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09681251235434717,
+        "ndcg": 0.33079047794894195,
+        "ndcg_at_10": 0.19250359992757468,
+        "ndcg_at_30": 0.2625570047717392,
+        "logloss": 0.07593045895998501,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09666490168507644,
+        "ndcg": 0.3313187120925927,
+        "ndcg_at_10": 0.19241288998887165,
+        "ndcg_at_30": 0.2621665787688538,
+        "logloss": 0.07547370068524308,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09642749168141494,
+        "ndcg": 0.32955548800498385,
+        "ndcg_at_10": 0.1897091588311765,
+        "ndcg_at_30": 0.2600300241954448,
+        "logloss": 0.07491146777664145,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 625.4495710000047,
+      "peak_ram_gib": 3.0522918701171875,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/confirm_mean_s42": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 5,
+      "train_logloss": 0.09639095822308807,
+      "ndcg": 0.33316688659182564,
+      "ndcg_at_10": 0.195145032902268,
+      "ndcg_at_30": 0.265042823212327,
+      "logloss": 0.07479893230540598,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09857713083514583,
+        "ndcg": 0.3287807422412326,
+        "ndcg_at_10": 0.18822752434313317,
+        "ndcg_at_30": 0.25975480908186704,
+        "logloss": 0.07612667082772819,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09717930644038002,
+        "ndcg": 0.3286701167967692,
+        "ndcg_at_10": 0.18867387196618032,
+        "ndcg_at_30": 0.2595088145721043,
+        "logloss": 0.07539124196928096,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09679792940182101,
+        "ndcg": 0.32974233816064574,
+        "ndcg_at_10": 0.19128325206623403,
+        "ndcg_at_30": 0.26037986717890804,
+        "logloss": 0.07511870844317506,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09654929571064247,
+        "ndcg": 0.3315040230725782,
+        "ndcg_at_10": 0.19422526535864362,
+        "ndcg_at_30": 0.2627608620967475,
+        "logloss": 0.07479688449922799,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09639095822308807,
+        "ndcg": 0.33316688659182564,
+        "ndcg_at_10": 0.195145032902268,
+        "ndcg_at_30": 0.265042823212327,
+        "logloss": 0.07479893230540598,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 523.8626626669866,
+      "peak_ram_gib": 3.1118011474609375,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/screen_centered_unit_mean": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "centered_unit_mean",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 1,
+      "train_logloss": 0.10050725878061409,
+      "ndcg": 0.32775349336882303,
+      "ndcg_at_10": 0.1878183563203533,
+      "ndcg_at_30": 0.2582404822482356,
+      "logloss": 0.07655404830863666,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10050725878061409,
+        "ndcg": 0.32775349336882303,
+        "ndcg_at_10": 0.1878183563203533,
+        "ndcg_at_30": 0.2582404822482356,
+        "logloss": 0.07655404830863666,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09814718162179382,
+        "ndcg": 0.3269324882925696,
+        "ndcg_at_10": 0.1871427796682651,
+        "ndcg_at_30": 0.2572782626922723,
+        "logloss": 0.07553409070852421,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09761209591410978,
+        "ndcg": 0.32766107483411205,
+        "ndcg_at_10": 0.18771153549898964,
+        "ndcg_at_30": 0.2582748327587506,
+        "logloss": 0.07547411540946353,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.0970927959978121,
+        "ndcg": 0.3193604358686398,
+        "ndcg_at_10": 0.17823984118770334,
+        "ndcg_at_30": 0.24957893421953073,
+        "logloss": 0.07625364752714348,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09690887155062704,
+        "ndcg": 0.32349647014102323,
+        "ndcg_at_10": 0.18268661486972487,
+        "ndcg_at_30": 0.2534582577398762,
+        "logloss": 0.07533567267505112,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "51034929f14b6df14d7b5516c1aebde260677b370ca1640429733b461c1260b6",
+        "src/neuroforge/models/neural/history_mean.py": "322b1fa94cd313d2818a7669e20b2a8f84ef20dd43cc43192badd73f762bb733",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "babd3144e0716459ac657164295a8adf29b97ade3643376310ec91d98ba8de93"
+      },
+      "seconds": 164.9344026250037,
+      "peak_ram_gib": 1.59185791015625,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/screen_novelty_recent32": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-novelty-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "candidate_features": "user_history",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 5,
+      "train_logloss": 0.0966007634391883,
+      "ndcg": 0.33930650941633916,
+      "ndcg_at_10": 0.20406690157371407,
+      "ndcg_at_30": 0.27258595748315956,
+      "logloss": 0.07475882001734761,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.0998203418430064,
+        "ndcg": 0.33300257612405987,
+        "ndcg_at_10": 0.19460023680348607,
+        "ndcg_at_30": 0.2650922555498991,
+        "logloss": 0.07643175093629578,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09795435872393247,
+        "ndcg": 0.3391526150684994,
+        "ndcg_at_10": 0.20335510362040501,
+        "ndcg_at_30": 0.2721936310864417,
+        "logloss": 0.07511267711424315,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09733845513056362,
+        "ndcg": 0.33799903988837127,
+        "ndcg_at_10": 0.20178692338803153,
+        "ndcg_at_30": 0.2710440107147021,
+        "logloss": 0.07544530141839982,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09688426153654449,
+        "ndcg": 0.3387964887474719,
+        "ndcg_at_10": 0.20251258299716998,
+        "ndcg_at_30": 0.2718781174595675,
+        "logloss": 0.07556764056254726,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.0966007634391883,
+        "ndcg": 0.33930650941633916,
+        "ndcg_at_10": 0.20406690157371407,
+        "ndcg_at_30": 0.27258595748315956,
+        "logloss": 0.07475882001734761,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 195.99676187500881,
+      "peak_ram_gib": 1.5866546630859375,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_cos_user_recent32_s42": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "candidate_features": "user",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 5,
+      "train_logloss": 0.09611777583625264,
+      "ndcg": 0.35040995487931853,
+      "ndcg_at_10": 0.2173655559152373,
+      "ndcg_at_30": 0.285997939315006,
+      "logloss": 0.07415551304340096,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09825883022272178,
+        "ndcg": 0.3426253390148147,
+        "ndcg_at_10": 0.2061565003595019,
+        "ndcg_at_30": 0.2761883680493249,
+        "logloss": 0.07567050667497856,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09689958451131506,
+        "ndcg": 0.34633415178737514,
+        "ndcg_at_10": 0.212316439877901,
+        "ndcg_at_30": 0.2816492801602752,
+        "logloss": 0.07485168487063698,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09648462023186115,
+        "ndcg": 0.3461041377933172,
+        "ndcg_at_10": 0.21179781493513558,
+        "ndcg_at_30": 0.2811370403461091,
+        "logloss": 0.0744915969045356,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09623882706444435,
+        "ndcg": 0.34925614027890994,
+        "ndcg_at_10": 0.21647031448701007,
+        "ndcg_at_30": 0.2850972063533148,
+        "logloss": 0.07398387137361251,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09611777583625264,
+        "ndcg": 0.35040995487931853,
+        "ndcg_at_10": 0.2173655559152373,
+        "ndcg_at_30": 0.285997939315006,
+        "logloss": 0.07415551304340096,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 641.0127652090014,
+      "peak_ram_gib": 3.0262603759765625,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/screen_recent32": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.09761183981371221,
+      "ndcg": 0.32730411742886745,
+      "ndcg_at_10": 0.18708688741267343,
+      "ndcg_at_30": 0.2577156411931449,
+      "logloss": 0.07550315246788852,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10031856916593625,
+        "ndcg": 0.32661145649493795,
+        "ndcg_at_10": 0.18624147155165885,
+        "ndcg_at_30": 0.256827564219125,
+        "logloss": 0.07719484539800688,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09807600348817275,
+        "ndcg": 0.32705808790316254,
+        "ndcg_at_10": 0.18739807869079467,
+        "ndcg_at_30": 0.2575488861780818,
+        "logloss": 0.07520795548044977,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09761183981371221,
+        "ndcg": 0.32730411742886745,
+        "ndcg_at_10": 0.18708688741267343,
+        "ndcg_at_30": 0.2577156411931449,
+        "logloss": 0.07550315246788852,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09707392763626248,
+        "ndcg": 0.3266321180869201,
+        "ndcg_at_10": 0.18578940081153036,
+        "ndcg_at_30": 0.25651373570388675,
+        "logloss": 0.07598199596955606,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09689393669809587,
+        "ndcg": 0.3258940056083624,
+        "ndcg_at_10": 0.18630951809373977,
+        "ndcg_at_30": 0.2560045936676708,
+        "logloss": 0.07516150446585888,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "592aee18177d10cc7f3bd90bf573fe1ba36932c506b607fe2df15e84a66f6195",
+        "src/neuroforge/models/neural/history_mean.py": "889c31c83b5c8e4e6d2dc03369eb65b32583c213110af66a62cc4c35be0fa10d",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "14e8f9b1b137341b88e93b90afbe87716feab06ff8494d9026651867c88c32e2"
+      },
+      "seconds": 144.87777804200596,
+      "peak_ram_gib": 1.6270751953125,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/confirm_control_s123": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 123,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.0972125300504343,
+      "ndcg": 0.33295932475512685,
+      "ndcg_at_10": 0.19498226734852256,
+      "ndcg_at_30": 0.26504868347102367,
+      "logloss": 0.07500032593206445,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09854793120648184,
+        "ndcg": 0.33087169926989274,
+        "ndcg_at_10": 0.19196983263576678,
+        "ndcg_at_30": 0.26193441180776367,
+        "logloss": 0.07946177415646727,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.0972125300504343,
+        "ndcg": 0.33295932475512685,
+        "ndcg_at_10": 0.19498226734852256,
+        "ndcg_at_30": 0.26504868347102367,
+        "logloss": 0.07500032593206445,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09688453993400473,
+        "ndcg": 0.3315903583589933,
+        "ndcg_at_10": 0.19304492579615218,
+        "ndcg_at_30": 0.2633112855543512,
+        "logloss": 0.07582943226296965,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09670647469460456,
+        "ndcg": 0.3314652062902249,
+        "ndcg_at_10": 0.19326441609329284,
+        "ndcg_at_30": 0.2622474826470067,
+        "logloss": 0.07564916017307279,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09647706031522138,
+        "ndcg": 0.3297443896886768,
+        "ndcg_at_10": 0.19084448558541708,
+        "ndcg_at_30": 0.261260700891464,
+        "logloss": 0.07494506540628489,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 689.0249136249913,
+      "peak_ram_gib": 3.1008148193359375,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/screen_decay32": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "decay32",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.097626930430242,
+      "ndcg": 0.3275544158944957,
+      "ndcg_at_10": 0.18735071964853953,
+      "ndcg_at_30": 0.25780598812773936,
+      "logloss": 0.0759082763372094,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.1003675392000511,
+        "ndcg": 0.32679974598855177,
+        "ndcg_at_10": 0.18676437108896682,
+        "ndcg_at_30": 0.2570647564752508,
+        "logloss": 0.07707624335129107,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09811365102341191,
+        "ndcg": 0.3268848773456282,
+        "ndcg_at_10": 0.1869801548652775,
+        "ndcg_at_30": 0.2575262831378195,
+        "logloss": 0.0752664194249554,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.097626930430242,
+        "ndcg": 0.3275544158944957,
+        "ndcg_at_10": 0.18735071964853953,
+        "ndcg_at_30": 0.25780598812773936,
+        "logloss": 0.0759082763372094,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09711286558824181,
+        "ndcg": 0.31890917765953497,
+        "ndcg_at_10": 0.17816046043229455,
+        "ndcg_at_30": 0.24874685525825477,
+        "logloss": 0.07591894354112347,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09690404141684006,
+        "ndcg": 0.323253479413265,
+        "ndcg_at_10": 0.18330060223745523,
+        "ndcg_at_30": 0.2528326760446482,
+        "logloss": 0.07521418674176801,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "592aee18177d10cc7f3bd90bf573fe1ba36932c506b607fe2df15e84a66f6195",
+        "src/neuroforge/models/neural/history_mean.py": "889c31c83b5c8e4e6d2dc03369eb65b32583c213110af66a62cc4c35be0fa10d",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "14e8f9b1b137341b88e93b90afbe87716feab06ff8494d9026651867c88c32e2"
+      },
+      "seconds": 145.1924990409898,
+      "peak_ram_gib": 1.6217041015625,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/screen_flag": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "flag",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.09815879814350369,
+      "ndcg": 0.32757785410873813,
+      "ndcg_at_10": 0.1874079200937992,
+      "ndcg_at_30": 0.2580625939279866,
+      "logloss": 0.07520510470285223,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.1004862661230125,
+        "ndcg": 0.3272681023870988,
+        "ndcg_at_10": 0.18748490961088227,
+        "ndcg_at_30": 0.25757666164785864,
+        "logloss": 0.07732272255011256,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09815879814350369,
+        "ndcg": 0.32757785410873813,
+        "ndcg_at_10": 0.1874079200937992,
+        "ndcg_at_30": 0.2580625939279866,
+        "logloss": 0.07520510470285223,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.0976251489682513,
+        "ndcg": 0.32637475617206385,
+        "ndcg_at_10": 0.18551454679226825,
+        "ndcg_at_30": 0.2567872997911711,
+        "logloss": 0.07586075412435832,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09713228132615849,
+        "ndcg": 0.325800028569373,
+        "ndcg_at_10": 0.18501836546199565,
+        "ndcg_at_30": 0.2563664031598994,
+        "logloss": 0.07564781110365346,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09698979857928865,
+        "ndcg": 0.32590533812989053,
+        "ndcg_at_10": 0.186058353572027,
+        "ndcg_at_30": 0.255751473958713,
+        "logloss": 0.07530723684981533,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "592aee18177d10cc7f3bd90bf573fe1ba36932c506b607fe2df15e84a66f6195",
+        "src/neuroforge/models/neural/history_mean.py": "889c31c83b5c8e4e6d2dc03369eb65b32583c213110af66a62cc4c35be0fa10d",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "14e8f9b1b137341b88e93b90afbe87716feab06ff8494d9026651867c88c32e2"
+      },
+      "seconds": 153.18256116600242,
+      "peak_ram_gib": 1.6378936767578125,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/screen_cos_user_mean": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "user",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.09739936561577449,
+      "ndcg": 0.33620873967782716,
+      "ndcg_at_10": 0.1987286383145356,
+      "ndcg_at_30": 0.2686840140030542,
+      "logloss": 0.07592516218691976,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.099794115632777,
+        "ndcg": 0.32948903491477544,
+        "ndcg_at_10": 0.19041704352446776,
+        "ndcg_at_30": 0.2605847882921438,
+        "logloss": 0.07608293849345152,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09791915791828229,
+        "ndcg": 0.3350305937546327,
+        "ndcg_at_10": 0.19781615897341745,
+        "ndcg_at_30": 0.26741109102320604,
+        "logloss": 0.07515303406294646,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09739936561577449,
+        "ndcg": 0.33620873967782716,
+        "ndcg_at_10": 0.1987286383145356,
+        "ndcg_at_30": 0.2686840140030542,
+        "logloss": 0.07592516218691976,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09683519041335109,
+        "ndcg": 0.33550876773440724,
+        "ndcg_at_10": 0.1985043448222097,
+        "ndcg_at_30": 0.2679048933879648,
+        "logloss": 0.07608670224114754,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09668754540117852,
+        "ndcg": 0.3352484166388337,
+        "ndcg_at_10": 0.1984076251244385,
+        "ndcg_at_30": 0.26753069888984826,
+        "logloss": 0.0749366179249669,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 165.9032287079899,
+      "peak_ram_gib": 1.513275146484375,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_mean_s123": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 123,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 4,
+      "train_logloss": 0.0965924559890385,
+      "ndcg": 0.33343108575215086,
+      "ndcg_at_10": 0.19599613253977083,
+      "ndcg_at_30": 0.2651918412293038,
+      "logloss": 0.0753609803256329,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09849588288232948,
+        "ndcg": 0.33093221242571136,
+        "ndcg_at_10": 0.19179242880798064,
+        "ndcg_at_30": 0.26181591519741126,
+        "logloss": 0.07942610205288564,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09717365474167264,
+        "ndcg": 0.33280981161527046,
+        "ndcg_at_10": 0.19509616894185935,
+        "ndcg_at_30": 0.2646497377324623,
+        "logloss": 0.07486080505183242,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09677278134089194,
+        "ndcg": 0.33262223414894493,
+        "ndcg_at_10": 0.19487009079232284,
+        "ndcg_at_30": 0.2647001512835048,
+        "logloss": 0.07545392052659709,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.0965924559890385,
+        "ndcg": 0.33343108575215086,
+        "ndcg_at_10": 0.19599613253977083,
+        "ndcg_at_30": 0.2651918412293038,
+        "logloss": 0.0753609803256329,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09639476290214213,
+        "ndcg": 0.3297740126235889,
+        "ndcg_at_10": 0.1903898291123097,
+        "ndcg_at_30": 0.26058632198687914,
+        "logloss": 0.0749797250698046,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 627.277031125006,
+      "peak_ram_gib": 3.0489959716796875,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/screen_user_similarity": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "user_similarity",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.0980803818607695,
+      "ndcg": 0.32819499596028695,
+      "ndcg_at_10": 0.18852803965686163,
+      "ndcg_at_30": 0.25860856853072584,
+      "logloss": 0.07518632504319327,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10021177191399139,
+        "ndcg": 0.32749150764660695,
+        "ndcg_at_10": 0.18724056164220296,
+        "ndcg_at_30": 0.25786304017815004,
+        "logloss": 0.07711548674604723,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.0980803818607695,
+        "ndcg": 0.32819499596028695,
+        "ndcg_at_10": 0.18852803965686163,
+        "ndcg_at_30": 0.25860856853072584,
+        "logloss": 0.07518632504319327,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09751331674500213,
+        "ndcg": 0.3278213547228795,
+        "ndcg_at_10": 0.18804348963239656,
+        "ndcg_at_30": 0.25832635713722046,
+        "logloss": 0.07566510660550912,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09704217330011677,
+        "ndcg": 0.32074045200656254,
+        "ndcg_at_10": 0.17974806140609115,
+        "ndcg_at_30": 0.25101159442897303,
+        "logloss": 0.07592007565231335,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09684203671614867,
+        "ndcg": 0.3239111431261773,
+        "ndcg_at_10": 0.1838920614590238,
+        "ndcg_at_30": 0.2541335791375009,
+        "logloss": 0.07523247706092596,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "592aee18177d10cc7f3bd90bf573fe1ba36932c506b607fe2df15e84a66f6195",
+        "src/neuroforge/models/neural/history_mean.py": "889c31c83b5c8e4e6d2dc03369eb65b32583c213110af66a62cc4c35be0fa10d",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "14e8f9b1b137341b88e93b90afbe87716feab06ff8494d9026651867c88c32e2"
+      },
+      "seconds": 149.19027199999255,
+      "peak_ram_gib": 1.6095428466796875,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/confirm_cos_user_recent32_s123": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 123,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "candidate_features": "user",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 4,
+      "train_logloss": 0.09636502450174514,
+      "ndcg": 0.3489738375150504,
+      "ndcg_at_10": 0.2163993693641442,
+      "ndcg_at_30": 0.28436256019341566,
+      "logloss": 0.07463105841009868,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09832256275243682,
+        "ndcg": 0.34110892899938866,
+        "ndcg_at_10": 0.2056213033093234,
+        "ndcg_at_30": 0.2747421444475844,
+        "logloss": 0.0783329890622872,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09689259811770204,
+        "ndcg": 0.3478577371026576,
+        "ndcg_at_10": 0.21487921073496158,
+        "ndcg_at_30": 0.2831631978923275,
+        "logloss": 0.0743497640588937,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.0964927728733238,
+        "ndcg": 0.348519925856568,
+        "ndcg_at_10": 0.2156049848834568,
+        "ndcg_at_30": 0.2839147517801878,
+        "logloss": 0.07474916680839437,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09636502450174514,
+        "ndcg": 0.3489738375150504,
+        "ndcg_at_10": 0.2163993693641442,
+        "ndcg_at_30": 0.28436256019341566,
+        "logloss": 0.07463105841009868,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09618045617269255,
+        "ndcg": 0.3468389794771742,
+        "ndcg_at_10": 0.21300763738276354,
+        "ndcg_at_30": 0.2821011131208921,
+        "logloss": 0.0741893098397309,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 652.7230827500025,
+      "peak_ram_gib": 3.111541748046875,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/screen_cos_user_history_recent32": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "candidate_features": "user_history",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 5,
+      "train_logloss": 0.0966007634391883,
+      "ndcg": 0.33930650941633916,
+      "ndcg_at_10": 0.20406690157371407,
+      "ndcg_at_30": 0.27258595748315956,
+      "logloss": 0.07475882001734761,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.0998203418430064,
+        "ndcg": 0.33300257612405987,
+        "ndcg_at_10": 0.19460023680348607,
+        "ndcg_at_30": 0.2650922555498991,
+        "logloss": 0.07643175093629578,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09795435872393247,
+        "ndcg": 0.3391526150684994,
+        "ndcg_at_10": 0.20335510362040501,
+        "ndcg_at_30": 0.2721936310864417,
+        "logloss": 0.07511267711424315,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09733845513056362,
+        "ndcg": 0.33799903988837127,
+        "ndcg_at_10": 0.20178692338803153,
+        "ndcg_at_30": 0.2710440107147021,
+        "logloss": 0.07544530141839982,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09688426153654449,
+        "ndcg": 0.3387964887474719,
+        "ndcg_at_10": 0.20251258299716998,
+        "ndcg_at_30": 0.2718781174595675,
+        "logloss": 0.07556764056254726,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.0966007634391883,
+        "ndcg": 0.33930650941633916,
+        "ndcg_at_10": 0.20406690157371407,
+        "ndcg_at_30": 0.27258595748315956,
+        "logloss": 0.07475882001734761,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 167.7036279580061,
+      "peak_ram_gib": 1.4980926513671875,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/screen_mean": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 3,
+      "train_logloss": 0.09756760079328262,
+      "ndcg": 0.3277580263611358,
+      "ndcg_at_10": 0.18773478832657942,
+      "ndcg_at_30": 0.25834002810324064,
+      "logloss": 0.07564681522185004,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10025398239039404,
+        "ndcg": 0.32635874635896794,
+        "ndcg_at_10": 0.18611076491017736,
+        "ndcg_at_30": 0.2567369363136233,
+        "logloss": 0.07638550969017774,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09804692137809938,
+        "ndcg": 0.3270669945361876,
+        "ndcg_at_10": 0.1871264242367898,
+        "ndcg_at_30": 0.25719229126064197,
+        "logloss": 0.07548545915101663,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09756760079328262,
+        "ndcg": 0.3277580263611358,
+        "ndcg_at_10": 0.18773478832657942,
+        "ndcg_at_30": 0.25834002810324064,
+        "logloss": 0.07564681522185004,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09711172637456036,
+        "ndcg": 0.32194169851648624,
+        "ndcg_at_10": 0.18133748797110938,
+        "ndcg_at_30": 0.2521224930776371,
+        "logloss": 0.07632439750185055,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09687712637534146,
+        "ndcg": 0.3238111156010683,
+        "ndcg_at_10": 0.1836353366469833,
+        "ndcg_at_30": 0.253837835748852,
+        "logloss": 0.07519593402560652,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "592aee18177d10cc7f3bd90bf573fe1ba36932c506b607fe2df15e84a66f6195",
+        "src/neuroforge/models/neural/history_mean.py": "889c31c83b5c8e4e6d2dc03369eb65b32583c213110af66a62cc4c35be0fa10d",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "14e8f9b1b137341b88e93b90afbe87716feab06ff8494d9026651867c88c32e2"
+      },
+      "seconds": 145.43912691700098,
+      "peak_ram_gib": 1.60455322265625,
+      "parameters": 93097
+    }
+  },
+  "runs/B02-extensions/confirm_cos_user_history_mean_s123": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 123,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "user_history",
+      "variant": "history",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.09684851907165742,
+      "ndcg": 0.3496152830511172,
+      "ndcg_at_10": 0.21737658599524223,
+      "ndcg_at_30": 0.2852894216835343,
+      "logloss": 0.07423879992752097,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09824885030888324,
+        "ndcg": 0.34326979236827776,
+        "ndcg_at_10": 0.20886037902612165,
+        "ndcg_at_30": 0.27738910711879283,
+        "logloss": 0.07871918538622379,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09684851907165742,
+        "ndcg": 0.3496152830511172,
+        "ndcg_at_10": 0.21737658599524223,
+        "ndcg_at_30": 0.2852894216835343,
+        "logloss": 0.07423879992752097,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09649908936184301,
+        "ndcg": 0.34732616371548575,
+        "ndcg_at_10": 0.21374995440020828,
+        "ndcg_at_30": 0.28247220112284255,
+        "logloss": 0.07490758851101854,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09634007769059166,
+        "ndcg": 0.34881284885074865,
+        "ndcg_at_10": 0.21603560088457358,
+        "ndcg_at_30": 0.28464903071052255,
+        "logloss": 0.0744631545046417,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.0961398109832185,
+        "ndcg": 0.3455679853725474,
+        "ndcg_at_10": 0.21113475326494632,
+        "ndcg_at_30": 0.28115819600549824,
+        "logloss": 0.07419384934494194,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 617.1600994159962,
+      "peak_ram_gib": 3.0534210205078125,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/confirm_cos_zero_control_s123": {
+    "config": {
+      "train_feeds": 50000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 2,
+      "threads": 1,
+      "seed": 123,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-pooling-confirm-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "mean",
+      "candidate_features": "zero",
+      "variant": "control",
+      "device": "cpu",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 2,
+      "train_logloss": 0.09716680080651667,
+      "ndcg": 0.3327278437314045,
+      "ndcg_at_10": 0.194879112111446,
+      "ndcg_at_30": 0.26468666102757576,
+      "logloss": 0.07489383520614583,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.09843449243918258,
+        "ndcg": 0.3306390033371664,
+        "ndcg_at_10": 0.19141361082351507,
+        "ndcg_at_30": 0.2613265572018091,
+        "logloss": 0.07808547648261163,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09716680080651667,
+        "ndcg": 0.3327278437314045,
+        "ndcg_at_10": 0.194879112111446,
+        "ndcg_at_30": 0.26468666102757576,
+        "logloss": 0.07489383520614583,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09685940531725827,
+        "ndcg": 0.3314296571922259,
+        "ndcg_at_10": 0.19294444000142533,
+        "ndcg_at_30": 0.2628243619088786,
+        "logloss": 0.07523833310154752,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09668089556500208,
+        "ndcg": 0.33266288057325677,
+        "ndcg_at_10": 0.19422055768214266,
+        "ndcg_at_30": 0.2640913448838263,
+        "logloss": 0.07542132067036496,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09649317720870824,
+        "ndcg": 0.3271020960120845,
+        "ndcg_at_10": 0.18759024056877285,
+        "ndcg_at_30": 0.25819822562103434,
+        "logloss": 0.07519157667221668,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/event_pooling.py": "432eea8771e9cd7bb3d74c055b53092c4d6f149db5f60f14c0f326fcad299867"
+      },
+      "seconds": 625.4132427079894,
+      "peak_ram_gib": 3.0912322998046875,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/mps-novelty-01/recent32": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 64,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-novelty-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32",
+      "candidate_features": "user_history",
+      "device": "mps",
+      "variant": "history",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 5,
+      "train_logloss": 0.09543663366897233,
+      "ndcg": 0.3393862120264725,
+      "ndcg_at_10": 0.2023509414619341,
+      "ndcg_at_30": 0.27285681761835745,
+      "logloss": 0.07494102685194427,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10329431230349573,
+        "ndcg": 0.3257668300950434,
+        "ndcg_at_10": 0.18590251940501543,
+        "ndcg_at_30": 0.2556495323142669,
+        "logloss": 0.07555136157453723,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09692897041133496,
+        "ndcg": 0.3347640330281322,
+        "ndcg_at_10": 0.19749772189754505,
+        "ndcg_at_30": 0.2667699478025962,
+        "logloss": 0.07507572487721023,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.096258790177694,
+        "ndcg": 0.33697996628355714,
+        "ndcg_at_10": 0.2003614685975342,
+        "ndcg_at_30": 0.2696436417047882,
+        "logloss": 0.07521237194058225,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.0962568670406141,
+        "ndcg": 0.3374578615507574,
+        "ndcg_at_10": 0.20091177726605447,
+        "ndcg_at_30": 0.27005063607699137,
+        "logloss": 0.07481958892515789,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09543663366897233,
+        "ndcg": 0.3393862120264725,
+        "ndcg_at_10": 0.2023509414619341,
+        "ndcg_at_30": 0.27285681761835745,
+        "logloss": 0.07494102685194427,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02_device.py": "02e9e11209dbe862afafc48090d9c946265b92651094c326ef663afc9b8d7fe8",
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/novelty_pooling.py": "cb55694e385e51eb3439b92ca977142b0158ffa821c529f2ffa0c57ddb0b7c75",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6"
+      },
+      "seconds": 294.9829565000109,
+      "peak_ram_gib": 1.58416748046875,
+      "parameters": 93225
+    }
+  },
+  "runs/B02-extensions/mps-novelty-01/recent32_novelty": {
+    "config": {
+      "train_feeds": 10000,
+      "val_feeds": 0,
+      "epochs": 5,
+      "batch_size": 64,
+      "threads": 1,
+      "seed": 42,
+      "width": 64,
+      "layers": 2,
+      "dropout": 0.1,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001,
+      "data_cache": "cache/B02-novelty-screen-v1",
+      "release_pages": true,
+      "skip_unused_history": true,
+      "history_mode": "recent32_novelty",
+      "candidate_features": "user_history",
+      "device": "mps",
+      "variant": "history",
+      "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+    },
+    "metrics": {
+      "epoch": 5,
+      "train_logloss": 0.09545443612277305,
+      "ndcg": 0.3398930369194041,
+      "ndcg_at_10": 0.20369997857238484,
+      "ndcg_at_30": 0.27306692360758034,
+      "logloss": 0.07490886074132937,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "history": [
+      {
+        "epoch": 1,
+        "train_logloss": 0.10330908738015658,
+        "ndcg": 0.3255322629414972,
+        "ndcg_at_10": 0.18558386933398768,
+        "ndcg_at_30": 0.25532357305304576,
+        "logloss": 0.07554846452870506,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 2,
+        "train_logloss": 0.09694984702015882,
+        "ndcg": 0.3342905445336269,
+        "ndcg_at_10": 0.19736270513431875,
+        "ndcg_at_30": 0.2663533396315868,
+        "logloss": 0.07506321548290452,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 3,
+        "train_logloss": 0.09626412800143691,
+        "ndcg": 0.33697422891903256,
+        "ndcg_at_10": 0.20058664942641172,
+        "ndcg_at_30": 0.2696314885968774,
+        "logloss": 0.07523326086823764,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 4,
+        "train_logloss": 0.09628257999736725,
+        "ndcg": 0.33756362118943134,
+        "ndcg_at_10": 0.20124180569245168,
+        "ndcg_at_30": 0.2702855890501838,
+        "logloss": 0.0748111103283655,
+        "feeds": 14423,
+        "candidates": 1389971
+      },
+      {
+        "epoch": 5,
+        "train_logloss": 0.09545443612277305,
+        "ndcg": 0.3398930369194041,
+        "ndcg_at_10": 0.20369997857238484,
+        "ndcg_at_30": 0.27306692360758034,
+        "logloss": 0.07490886074132937,
+        "feeds": 14423,
+        "candidates": 1389971
+      }
+    ],
+    "provenance": {
+      "commit": "4d0cdd5d484eb772e090d417f80d0f23506dcafb",
+      "source_sha256": {
+        "scripts/train_b02_device.py": "02e9e11209dbe862afafc48090d9c946265b92651094c326ef663afc9b8d7fe8",
+        "scripts/train_b02.py": "193c5f4ea3ea401912552dbd0d7aa88d620dfa17dad2710921807dbe236bc8f0",
+        "baseline/neural_baseline.py": "87b731df2a5507957c075e93a7f219c1fa4f59b9b7bb9752c59c43087bb2cc06",
+        "src/neuroforge/metrics.py": "74256a494fd489b4c31d49dd7bc4152015ecc55550ecece758e7f73e34636211",
+        "src/neuroforge/models/neural/history_mean.py": "dacd25a120b7ed442c18c6fa6157a0d07ba7797e7623fbf78c59e0e98363d3c3",
+        "src/neuroforge/models/neural/profile_cache.py": "8be082b99b29c4f71f0d4c6be0d71beaab5b0a25b646baaa752db6818a47b809",
+        "src/neuroforge/models/neural/novelty_pooling.py": "cb55694e385e51eb3439b92ca977142b0158ffa821c529f2ffa0c57ddb0b7c75",
+        "src/neuroforge/models/neural/progress.py": "a389a4c7c8562a5259d5c3571ba6a852335637343d5627271062df6a93e0cfe6"
+      },
+      "seconds": 257.87708791600016,
+      "peak_ram_gib": 1.4176177978515625,
+      "parameters": 93225
+    }
+  }
+}

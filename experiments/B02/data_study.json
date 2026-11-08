@@ -1,0 +1,381 @@
+{
+  "feeds": 50000,
+  "candidates": 3896275,
+  "study": "train only; fixed prefix50000, user-hash70/30 split; neither full train nor temporal holdout",
+  "metric": "Mean per-feed positive-vs-negative AUC; .5 means no ordering signal. Feeds without both classes excluded.",
+  "feature_names": [
+    "user_cos",
+    "recent_cos",
+    "older_cos",
+    "novelty_cos",
+    "supported_novelty_cos",
+    "change_cos",
+    "max_recent_cos",
+    "top3_recent_cos",
+    "recent_category_fraction",
+    "older_category_fraction",
+    "new_category",
+    "repeated_new_category",
+    "recent_match_fraction"
+  ],
+  "seconds": 285.5623165420111,
+  "parts": {
+    "explore": {
+      "feeds": 35555,
+      "usable_feeds": 35555,
+      "auc": {
+        "user_cos": 0.5948849031699107,
+        "recent_cos": 0.5885704966321667,
+        "older_cos": 0.550940311415213,
+        "novelty_cos": 0.5894843258312703,
+        "supported_novelty_cos": 0.5890705535231562,
+        "change_cos": 0.5504569186720423,
+        "max_recent_cos": 0.6060762928111003,
+        "top3_recent_cos": 0.6051148571184117,
+        "recent_category_fraction": 0.5835663236181786,
+        "older_category_fraction": 0.5575560272004463,
+        "new_category": 0.5009827194152263,
+        "repeated_new_category": 0.5033727468707315,
+        "recent_match_fraction": 0.5894414760245732
+      },
+      "slices": {
+        "old_history": {
+          "feeds": 32599,
+          "auc": {
+            "user_cos": 0.5933824728474215,
+            "recent_cos": 0.5876773852312392,
+            "older_cos": 0.5555594580314703,
+            "novelty_cos": 0.58867407829465,
+            "supported_novelty_cos": 0.5882227860950426,
+            "change_cos": 0.5550322323808848,
+            "max_recent_cos": 0.6061962870372418,
+            "top3_recent_cos": 0.6051793594711811,
+            "recent_category_fraction": 0.584224660777986,
+            "older_category_fraction": 0.5625406345485126,
+            "new_category": 0.5010098448322344,
+            "repeated_new_category": 0.5036637403371534,
+            "recent_match_fraction": 0.5895429393778111
+          }
+        },
+        "no_old_history": {
+          "feeds": 2956,
+          "auc": {
+            "user_cos": 0.6114538226837221,
+            "recent_cos": 0.5984197992569418,
+            "older_cos": 0.5,
+            "novelty_cos": 0.5984197992569418,
+            "supported_novelty_cos": 0.5984197992569418,
+            "change_cos": 0.5,
+            "max_recent_cos": 0.6047529870675344,
+            "top3_recent_cos": 0.6044035201096388,
+            "recent_category_fraction": 0.5763061297506041,
+            "older_category_fraction": 0.5025853861518623,
+            "new_category": 0.5006835781875378,
+            "repeated_new_category": 0.5001636480845715,
+            "recent_match_fraction": 0.5883225302017722
+          }
+        },
+        "novel_supported": {
+          "feeds": 27300,
+          "auc": {
+            "user_cos": 0.5891085721566368,
+            "recent_cos": 0.583815364054695,
+            "older_cos": 0.5488431599686622,
+            "novelty_cos": 0.5851315183409199,
+            "supported_novelty_cos": 0.584505269839463,
+            "change_cos": 0.5511203011667539,
+            "max_recent_cos": 0.6041354543691232,
+            "top3_recent_cos": 0.6030361873527775,
+            "recent_category_fraction": 0.5831092665902889,
+            "older_category_fraction": 0.5596869453695168,
+            "new_category": 0.5013292428761211,
+            "repeated_new_category": 0.5041148395070792,
+            "recent_match_fraction": 0.5879561012889456
+          }
+        },
+        "novel_without_support": {
+          "feeds": 3455,
+          "auc": {
+            "user_cos": 0.6028974885739781,
+            "recent_cos": 0.5971715957753785,
+            "older_cos": 0.5868897732071315,
+            "novelty_cos": 0.596307723175812,
+            "supported_novelty_cos": 0.5967138514474227,
+            "change_cos": 0.5651864647826744,
+            "max_recent_cos": 0.6072079399187984,
+            "top3_recent_cos": 0.6068494872286426,
+            "recent_category_fraction": 0.5832426875815254,
+            "older_category_fraction": 0.5744134027026413,
+            "new_category": 0.499066591251931,
+            "repeated_new_category": 0.5020891857646218,
+            "recent_match_fraction": 0.589192244446265
+          }
+        },
+        "new_category": {
+          "feeds": 12505,
+          "auc": {
+            "user_cos": 0.5906770509607491,
+            "recent_cos": 0.577977592803447,
+            "older_cos": 0.5453141361579411,
+            "novelty_cos": 0.579071271052874,
+            "supported_novelty_cos": 0.5786316535502783,
+            "change_cos": 0.5432179258339747,
+            "max_recent_cos": 0.6029206703781236,
+            "top3_recent_cos": 0.6003542320118863,
+            "recent_category_fraction": 0.5850396651665218,
+            "older_category_fraction": 0.5561796551028088,
+            "new_category": 0.5027941294528883,
+            "repeated_new_category": 0.509589605356966,
+            "recent_match_fraction": 0.586414726848061
+          }
+        },
+        "repeated_new_category": {
+          "feeds": 7293,
+          "auc": {
+            "user_cos": 0.5884690838843382,
+            "recent_cos": 0.5689239708715796,
+            "older_cos": 0.5334487907930662,
+            "novelty_cos": 0.5701834126291909,
+            "supported_novelty_cos": 0.5691656297921117,
+            "change_cos": 0.5421074654747667,
+            "max_recent_cos": 0.603497679436842,
+            "top3_recent_cos": 0.597781881079623,
+            "recent_category_fraction": 0.5785393249519846,
+            "older_category_fraction": 0.5396343064766729,
+            "new_category": 0.5128949908509515,
+            "repeated_new_category": 0.5164428924981297,
+            "recent_match_fraction": 0.5846398626576702
+          }
+        }
+      }
+    },
+    "check": {
+      "feeds": 14445,
+      "usable_feeds": 14445,
+      "auc": {
+        "user_cos": 0.594007233813589,
+        "recent_cos": 0.5926149750108278,
+        "older_cos": 0.5551044303070145,
+        "novelty_cos": 0.5926974106746848,
+        "supported_novelty_cos": 0.5916267668494334,
+        "change_cos": 0.5533710814453652,
+        "max_recent_cos": 0.6067229396848405,
+        "top3_recent_cos": 0.6085839451207538,
+        "recent_category_fraction": 0.5833991270599331,
+        "older_category_fraction": 0.5601790955021486,
+        "new_category": 0.5002105277050147,
+        "repeated_new_category": 0.5023501386932201,
+        "recent_match_fraction": 0.5912001937394195
+      },
+      "slices": {
+        "old_history": {
+          "feeds": 13662,
+          "auc": {
+            "user_cos": 0.5931304932798193,
+            "recent_cos": 0.5920566204487712,
+            "older_cos": 0.5582625893562309,
+            "novelty_cos": 0.5921437806862484,
+            "supported_novelty_cos": 0.5910117758512492,
+            "change_cos": 0.5564298983661469,
+            "max_recent_cos": 0.6060162190756956,
+            "top3_recent_cos": 0.6080921764442743,
+            "recent_category_fraction": 0.5833072030397087,
+            "older_category_fraction": 0.5633809547968122,
+            "new_category": 0.5002253747735043,
+            "repeated_new_category": 0.5023512562380253,
+            "recent_match_fraction": 0.5910810052954452
+          }
+        },
+        "no_old_history": {
+          "feeds": 783,
+          "auc": {
+            "user_cos": 0.6093048445062602,
+            "recent_cos": 0.6023572994384371,
+            "older_cos": 0.5,
+            "novelty_cos": 0.6023572994384371,
+            "supported_novelty_cos": 0.6023572994384371,
+            "change_cos": 0.5,
+            "max_recent_cos": 0.6190539958306108,
+            "top3_recent_cos": 0.6171644606482924,
+            "recent_category_fraction": 0.5850030427231588,
+            "older_category_fraction": 0.5043121712573329,
+            "new_category": 0.4999514719582658,
+            "repeated_new_category": 0.5023306394631696,
+            "recent_match_fraction": 0.5932798265894548
+          }
+        },
+        "novel_supported": {
+          "feeds": 11499,
+          "auc": {
+            "user_cos": 0.5892467093506258,
+            "recent_cos": 0.5884131525442489,
+            "older_cos": 0.551957617447101,
+            "novelty_cos": 0.5882637781398216,
+            "supported_novelty_cos": 0.5871524419836918,
+            "change_cos": 0.5528622364525488,
+            "max_recent_cos": 0.6031821322923244,
+            "top3_recent_cos": 0.6052651798046276,
+            "recent_category_fraction": 0.5815708002794907,
+            "older_category_fraction": 0.5599941595937247,
+            "new_category": 0.5007544356256354,
+            "repeated_new_category": 0.5031339842584867,
+            "recent_match_fraction": 0.5885126644940872
+          }
+        },
+        "novel_without_support": {
+          "feeds": 1397,
+          "auc": {
+            "user_cos": 0.6071709276152437,
+            "recent_cos": 0.6044554987140216,
+            "older_cos": 0.5922221071993612,
+            "novelty_cos": 0.6064889451287258,
+            "supported_novelty_cos": 0.6054230777895623,
+            "change_cos": 0.5689519687623885,
+            "max_recent_cos": 0.6189465387276034,
+            "top3_recent_cos": 0.6194810815847147,
+            "recent_category_fraction": 0.5964899399766347,
+            "older_category_fraction": 0.5811991844655036,
+            "new_category": 0.4977960082168502,
+            "repeated_new_category": 0.4989573422054719,
+            "recent_match_fraction": 0.6033184387596027
+          }
+        },
+        "new_category": {
+          "feeds": 5168,
+          "auc": {
+            "user_cos": 0.5888793629275624,
+            "recent_cos": 0.5845252203344112,
+            "older_cos": 0.5477141512962928,
+            "novelty_cos": 0.5837090905301545,
+            "supported_novelty_cos": 0.5831585556015422,
+            "change_cos": 0.5445310242709565,
+            "max_recent_cos": 0.6042468755405918,
+            "top3_recent_cos": 0.6064269766488819,
+            "recent_category_fraction": 0.5839006510502576,
+            "older_category_fraction": 0.5525597598249529,
+            "new_category": 0.5005884428597015,
+            "repeated_new_category": 0.5065688377367578,
+            "recent_match_fraction": 0.5889906467684249
+          }
+        },
+        "repeated_new_category": {
+          "feeds": 2951,
+          "auc": {
+            "user_cos": 0.586359031118131,
+            "recent_cos": 0.577317927845202,
+            "older_cos": 0.5381085100134175,
+            "novelty_cos": 0.5761589234514485,
+            "supported_novelty_cos": 0.5740310943071192,
+            "change_cos": 0.5419227278970008,
+            "max_recent_cos": 0.5971209290435098,
+            "top3_recent_cos": 0.5976388925361442,
+            "recent_category_fraction": 0.5782528354540837,
+            "older_category_fraction": 0.5423673229947765,
+            "new_category": 0.5087754848555409,
+            "repeated_new_category": 0.5115038134271652,
+            "recent_match_fraction": 0.5810764484582838
+          }
+        }
+      }
+    }
+  },
+  "exploration_shortlist": [
+    "max_recent_cos",
+    "top3_recent_cos",
+    "novelty_cos"
+  ],
+  "source_sha256": {
+    "scripts/study_b02_data.py": "5b1729dfab7dc48ee98863469c140e98ffa34d4b267da919e28899dae942c26f",
+    "src/neuroforge/models/neural/data_signals.py": "09ee1cf45cc45059075d8bce7235a4c13e2daeba961b772dbf4adce8fe9c62df"
+  },
+  "cache_metadata_sha256": "245f6a8c077e05226d5d4c219cd65b9d30f61dc5ba8c38daf3b8a2e39b13af6f",
+  "check_category_rates": {
+    "new_single": {
+      "candidates": 21157,
+      "positives": 371,
+      "positive_rate": 0.01753556728363037
+    },
+    "new_repeated": {
+      "candidates": 38233,
+      "positives": 974,
+      "positive_rate": 0.02547537535429001
+    },
+    "other": {
+      "candidates": 1072434,
+      "positives": 23570,
+      "positive_rate": 0.021978043019771576
+    }
+  },
+  "category_rates_warning": "Pooled descriptive candidate rates; groups differ in users/categories and are not causal or exposure-bias corrected.",
+  "check_comparisons": [
+    {
+      "candidate": "recent_cos",
+      "reference": "user_cos",
+      "feeds": 14445,
+      "mean_auc_difference": -0.0013922588027612257,
+      "user_bootstrap_95pct": [
+        -0.005600229181346344,
+        0.0027206184076674694
+      ]
+    },
+    {
+      "candidate": "novelty_cos",
+      "reference": "recent_cos",
+      "feeds": 14445,
+      "mean_auc_difference": 8.243566385700673e-05,
+      "user_bootstrap_95pct": [
+        -0.0015869033931409028,
+        0.0017944607708584002
+      ]
+    },
+    {
+      "candidate": "supported_novelty_cos",
+      "reference": "recent_cos",
+      "feeds": 14445,
+      "mean_auc_difference": -0.0009882081613944947,
+      "user_bootstrap_95pct": [
+        -0.0025704162934161957,
+        0.0005378733312158555
+      ]
+    },
+    {
+      "candidate": "supported_novelty_cos",
+      "reference": "novelty_cos",
+      "feeds": 14445,
+      "mean_auc_difference": -0.0010706438252515017,
+      "user_bootstrap_95pct": [
+        -0.002062677489625551,
+        -6.923332028362073e-05
+      ]
+    },
+    {
+      "candidate": "max_recent_cos",
+      "reference": "recent_cos",
+      "feeds": 14445,
+      "mean_auc_difference": 0.014107964674012733,
+      "user_bootstrap_95pct": [
+        0.010370628531056593,
+        0.018267427129179007
+      ]
+    },
+    {
+      "candidate": "top3_recent_cos",
+      "reference": "recent_cos",
+      "feeds": 14445,
+      "mean_auc_difference": 0.01596897010992594,
+      "user_bootstrap_95pct": [
+        0.012299641731016355,
+        0.019506211197207007
+      ]
+    }
+  ],
+  "limitations": [
+    "Train prefix50000 is about1.6% of full train, not representative sampling.",
+    "AUC association is descriptive, not a causal effect or neural NDCG improvement.",
+    "Check users are disjoint from exploration users, not a future temporal sample.",
+    "All thirteen signals inspected; intervals are descriptive and not multiplicity corrected.",
+    "Categories are coarse anonymous IDs; embedding proximity is only a topic proxy.",
+    "No timestamps for individual history events; recent means event order, not elapsed time.",
+    "Ranks preserve each individual signal ordering; their benefit to the network requires training."
+  ]
+}

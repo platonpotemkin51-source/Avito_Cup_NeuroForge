@@ -1,0 +1,38 @@
+{
+  "checkpoint": "/Users/artemgolubev/Programming/Avito ML Cup/runs/B02-history-50k-seed42-01/model.pt",
+  "diagnostic_only": true,
+  "results": {
+    "actual": {
+      "ndcg": 0.335086528630719,
+      "ndcg_at_10": 0.19760864171748127,
+      "ndcg_at_30": 0.2675162189093484,
+      "logloss": 0.07473105656574353,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "flag_only": {
+      "ndcg": 0.3358431360130129,
+      "ndcg_at_10": 0.19865114126588224,
+      "ndcg_at_30": 0.2682242225391622,
+      "logloss": 0.0748486268396778,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "zero": {
+      "ndcg": 0.33570034564473616,
+      "ndcg_at_10": 0.19854641243415175,
+      "ndcg_at_30": 0.26801974434503095,
+      "logloss": 0.07485569706373744,
+      "feeds": 14423,
+      "candidates": 1389971
+    },
+    "shuffled": {
+      "ndcg": 0.3343048526810141,
+      "ndcg_at_10": 0.1962935924212793,
+      "ndcg_at_30": 0.266649636361232,
+      "logloss": 0.07477153241198474,
+      "feeds": 14423,
+      "candidates": 1389971
+    }
+  }
+}

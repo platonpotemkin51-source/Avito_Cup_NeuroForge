@@ -1,0 +1,14 @@
+{
+  "tests": 21,
+  "status": "passed",
+  "real_val_compatibility": {
+    "feeds": 64,
+    "candidates": 5015,
+    "old_and_cleaned_cpu_scores_max_difference": 0.0,
+    "label_columns_read": false
+  },
+  "data_and_weights_committed": false,
+  "cuda_runtime_shipped": false,
+  "cuda_hardware_tested": false,
+  "handoff": "docs/CAPTAIN_AI_HANDOFF.md"
+}
