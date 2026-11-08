@@ -1,0 +1,6 @@
+{
+"meta":{"test_sets":["eval_dataset"],"test_metrics":[{"best_value":"Max","name":"NDCG:type=Base"},{"best_value":"Max","name":"NDCG:top=30;type=Base"},{"best_value":"Max","name":"NDCG:top=10;type=Base"}],"learn_metrics":[],"launch_mode":"Eval","parameters":"","iteration_count":1,"learn_sets":[],"name":""},
+"iterations":[
+{"iteration":0,"eval_dataset":[0.2930249467,0.2145380619,0.1412537164]},
+{"iteration":233,"eval_dataset":[0.3524205385,0.2888227546,0.2197542885]}
+]}

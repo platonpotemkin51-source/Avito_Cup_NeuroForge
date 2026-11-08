@@ -20,3 +20,5 @@ C04,C,proposed,,,,,,,
 C05,C,proposed,,,,,,,
 C06,C,proposed,,,,,,,
 C07,C,proposed,,,,,,,
+BASE-CB-50K,C,measured,,configs/catboost_gpu_50k.json,bb4eb8f93a06a64c50e693ae8e795250aae94ead,0.35242053847515664,,runs/A-gpu-50k,Baseline only; first 50000 train feeds; all 14423 val feeds; no independent holdout; source and config SHA256 in runs/baseline-50k/manifest.json
+BASE-NN-50K,C,measured,,configs/neural_gpu_50k.json,bb4eb8f93a06a64c50e693ae8e795250aae94ead,0.3326732173555679,,runs/B-gpu-50k,Baseline only; first 50000 train feeds; all 14423 val feeds; no independent holdout; source and config SHA256 in runs/baseline-50k/manifest.json

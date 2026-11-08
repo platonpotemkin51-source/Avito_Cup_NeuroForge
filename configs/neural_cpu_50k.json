@@ -1,0 +1,11 @@
+{
+  "model": "neural",
+  "device": "cpu",
+  "params": {
+    "train_feeds": 50000,
+    "val_feeds": 0,
+    "epochs": 5,
+    "batch_size": 32,
+    "threads": 4
+  }
+}

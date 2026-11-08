@@ -1,0 +1,15 @@
+{
+  "model": "catboost",
+  "data": {
+    "train_feeds": 50000,
+    "val_feeds": 0
+  },
+  "params": {
+    "task_type": "GPU",
+    "devices": "0",
+    "gpu_ram_part": 0.65,
+    "num_trees": 1000,
+    "eval_metric": "NDCG:type=Base",
+    "thread_count": 4
+  }
+}
