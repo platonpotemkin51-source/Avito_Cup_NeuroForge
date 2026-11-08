@@ -72,21 +72,30 @@ def main():
     resolved = {**config, 'variant': args.variant, 'device': 'cpu', 'data': str(args.data.resolve())}
     (args.output / 'config.json').write_text(json.dumps(resolved, indent=2)+'\n')
     print('[loading] Building train inventory/category vocabulary', flush=True)
-    training = HistoryFeeds(args.data / 'train', config['train_feeds'], shuffle=True, seed=config['seed'])
+    input_options = {'include_history': args.variant == 'history' or not config.get('skip_unused_history', False),
+                     'release_pages': config.get('release_pages', False)}
+    training = HistoryFeeds(args.data / 'train', config['train_feeds'], shuffle=True, seed=config['seed'], **input_options)
     print('[loading] Building validation inventory', flush=True)
-    validation = HistoryFeeds(args.data / 'val', config['val_feeds'], mapping=training.mapping)
+    validation = HistoryFeeds(args.data / 'val', config['val_feeds'], mapping=training.mapping, **input_options)
     print(f'[loaded] train={len(training)} val={len(validation)}; RAM={peak_ram_gib():.2f} GiB', flush=True)
     model_params = {k: config[k] for k in ['width', 'layers', 'dropout']}
     model = make_ranker(len(training.mapping), use_history=args.variant == 'history', **model_params)
     optimizer = torch.optim.AdamW(model.parameters(), lr=config['learning_rate'], weight_decay=config['weight_decay'])
     history, best = [], float('-inf')
+    def save_weights(name, epoch, step=None):
+        temporary = args.output / (name + '.tmp')
+        torch.save({'state_dict': model.state_dict(), 'categories_mapping': training.mapping,
+                    'model_params': model_params, 'use_history': args.variant == 'history',
+                    'epoch': epoch, 'step': step, 'completed_epoch': step is None}, temporary)
+        temporary.replace(args.output / name)
+
     for epoch in range(1, config['epochs'] + 1):
         training.epoch = epoch - 1
         model.train()
         total_loss, candidates = 0., 0
         loader = ProgressLoader(training, batch_size=config['batch_size'], collate_fn=collate_history, num_workers=0)
         loader.stage = 'train'
-        for batch in loader:
+        for step, batch in enumerate(loader, 1):
             optimizer.zero_grad(set_to_none=True)
             real = ~batch['padding']
             logits = forward(model, batch)
@@ -98,6 +107,10 @@ def main():
             n = int(real.sum())
             total_loss += loss.item() * n
             candidates += n
+            if config.get('save_every_steps', 0) and step % config['save_every_steps'] == 0:
+                save_weights('model_latest.pt', epoch, step)
+                print(f'[saved] intermediate inference weights: epoch={epoch}, batch={step}', flush=True)
+        save_weights('model_latest.pt', epoch)
         with torch.random.fork_rng(devices=[]):
             quality, predictions = evaluate(model, validation, config['batch_size'])
         metrics = {'epoch': epoch, 'train_logloss': total_loss / candidates, **quality}

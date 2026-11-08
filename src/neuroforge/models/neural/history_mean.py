@@ -1,6 +1,7 @@
 """B02: bounded-shard input and mean-history extension of the organizer ranker."""
 import importlib.util
 import json
+import mmap
 from pathlib import Path
 import random
 
@@ -44,10 +45,11 @@ class HistoryFeeds(IterableDataset):
 
     Prefix limits are fixed before epoch shuffling; num_workers=0 is required.
     """
-    def __init__(self, split, max_feeds=0, mapping=None, shuffle=False, seed=42):
+    def __init__(self, split, max_feeds=0, mapping=None, shuffle=False, seed=42, include_history=True, release_pages=False):
         super().__init__()
         self.split = Path(split)
         self.shuffle, self.seed, self.epoch = shuffle, seed, 0
+        self.include_history, self.release_pages = include_history, release_pages
         if max_feeds < 0:
             raise ValueError('Nonnegative feed limit required')
         self.parts, self.count = [], 0
@@ -88,7 +90,7 @@ class HistoryFeeds(IterableDataset):
             rng.shuffle(parts)
         for path, take in parts:
             schema = pl.scan_parquet(path).collect_schema()
-            columns = COLUMNS + (['target'] if 'target' in schema else [])
+            columns = [c for c in COLUMNS if self.include_history or c != 'history__item_id__embedding_idx'] + (['target'] if 'target' in schema else [])
             frame = pl.read_parquet(path, columns=columns, n_rows=take)
             order = list(range(len(frame)))
             if self.shuffle:
@@ -105,10 +107,15 @@ class HistoryFeeds(IterableDataset):
                 features = torch.from_numpy(np.concatenate([numeric, items, (~present).astype(np.float32)[:, None]], axis=1))
                 user = F.normalize(torch.tensor(row['user_embedding'], dtype=torch.float32), dim=0)
                 yield {'features': features, 'category': torch.tensor([self.mapping.get(c, 0) for c in row['category_id']]),
-                       'user': user, 'history': mean_history(self.items, row['history__item_id__embedding_idx']),
+                       'user': user, 'history': mean_history(self.items, row['history__item_id__embedding_idx']) if self.include_history else torch.zeros(129),
                        'target': torch.tensor(row['target'], dtype=torch.float32) if 'target' in row else None,
                        'feed_id': row['feed_id'], 'item_id': row['item_id']}
             del frame
+            if self.release_pages and hasattr(self.items._mmap, "madvise") and hasattr(mmap, "MADV_DONTNEED"):
+                try:
+                    self.items._mmap.madvise(mmap.MADV_DONTNEED)
+                except (OSError, ValueError):
+                    pass  # OS may decline advice; it never changes the data.
 
 
 def collate_history(rows):

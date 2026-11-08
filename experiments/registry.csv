@@ -20,3 +20,4 @@ C04,C,proposed,,,,,,,
 C05,C,proposed,,,,,,,
 C06,C,proposed,,,,,,,
 C07,C,proposed,,,,,,,
+FULL01,B,proposed,B02 control without history,configs/full_cpu_control.json,,,,docs/FULL_CPU.md,"Planned full train only, one CPU epoch; full val and test validation; not launched"
