@@ -1,0 +1,409 @@
+{
+  "hypothesis": "B02",
+  "decision": "completed_without_acceptance",
+  "reason": "Seed42 gain +0.00136577 did not reproduce in magnitude: seed123 +0.00000535, interval includes zero. No stable practically meaningful gain established.",
+  "pairs": {
+    "42": {
+      "runs": {
+        "control": {
+          "config": {
+            "train_feeds": 50000,
+            "val_feeds": 0,
+            "epochs": 5,
+            "batch_size": 2,
+            "threads": 4,
+            "seed": 42,
+            "width": 64,
+            "layers": 2,
+            "dropout": 0.1,
+            "learning_rate": 0.001,
+            "weight_decay": 0.0001,
+            "variant": "control",
+            "device": "cpu",
+            "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+          },
+          "metrics": {
+            "epoch": 5,
+            "train_logloss": 0.09641080583547931,
+            "ndcg": 0.3337207602691486,
+            "ndcg_at_10": 0.19601394428073035,
+            "ndcg_at_30": 0.2651687584123704,
+            "logloss": 0.07483147905870931,
+            "feeds": 14423,
+            "candidates": 1389971
+          },
+          "history": [
+            {
+              "epoch": 1,
+              "train_logloss": 0.09857920799263475,
+              "ndcg": 0.3298271514023252,
+              "ndcg_at_10": 0.18996620801225086,
+              "ndcg_at_30": 0.2608334809248761,
+              "logloss": 0.07683095676046287,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 2,
+              "train_logloss": 0.09718143005197771,
+              "ndcg": 0.3293980345594224,
+              "ndcg_at_10": 0.18981363117842182,
+              "ndcg_at_30": 0.26002780207532317,
+              "logloss": 0.07533707201238883,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 3,
+              "train_logloss": 0.09681004007553694,
+              "ndcg": 0.3318576537621182,
+              "ndcg_at_10": 0.19313366169254337,
+              "ndcg_at_30": 0.26278437840182634,
+              "logloss": 0.07508875596352023,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 4,
+              "train_logloss": 0.09655351795161243,
+              "ndcg": 0.33266628495413947,
+              "ndcg_at_10": 0.19459894813930084,
+              "ndcg_at_30": 0.26419697665886493,
+              "logloss": 0.07479694695110455,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 5,
+              "train_logloss": 0.09641080583547931,
+              "ndcg": 0.3337207602691486,
+              "ndcg_at_10": 0.19601394428073035,
+              "ndcg_at_30": 0.2651687584123704,
+              "logloss": 0.07483147905870931,
+              "feeds": 14423,
+              "candidates": 1389971
+            }
+          ],
+          "seconds": 2844.080389999999,
+          "peak_ram_gib": 5.373077392578125,
+          "parameters": 93097
+        },
+        "history": {
+          "config": {
+            "train_feeds": 50000,
+            "val_feeds": 0,
+            "epochs": 5,
+            "batch_size": 2,
+            "threads": 4,
+            "seed": 42,
+            "width": 64,
+            "layers": 2,
+            "dropout": 0.1,
+            "learning_rate": 0.001,
+            "weight_decay": 0.0001,
+            "variant": "history",
+            "device": "cpu",
+            "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+          },
+          "metrics": {
+            "epoch": 5,
+            "train_logloss": 0.09638543781555652,
+            "ndcg": 0.335086528630719,
+            "ndcg_at_10": 0.19760864171748127,
+            "ndcg_at_30": 0.2675162189093484,
+            "logloss": 0.07473105656574353,
+            "feeds": 14423,
+            "candidates": 1389971
+          },
+          "history": [
+            {
+              "epoch": 1,
+              "train_logloss": 0.09852026349894319,
+              "ndcg": 0.3293418958717796,
+              "ndcg_at_10": 0.18882521128386587,
+              "ndcg_at_30": 0.2601604324840851,
+              "logloss": 0.0759347198598982,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 2,
+              "train_logloss": 0.09713588096701326,
+              "ndcg": 0.3304375557159081,
+              "ndcg_at_10": 0.19080224378368743,
+              "ndcg_at_30": 0.26132760592298226,
+              "logloss": 0.07534610922390296,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 3,
+              "train_logloss": 0.09676702352255848,
+              "ndcg": 0.32967947470487663,
+              "ndcg_at_10": 0.19122629848058187,
+              "ndcg_at_30": 0.26015413775741847,
+              "logloss": 0.07509710623869784,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 4,
+              "train_logloss": 0.09652003286803938,
+              "ndcg": 0.33144891794834913,
+              "ndcg_at_10": 0.19346779624160793,
+              "ndcg_at_30": 0.26309441298136527,
+              "logloss": 0.07472261817024975,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 5,
+              "train_logloss": 0.09638543781555652,
+              "ndcg": 0.335086528630719,
+              "ndcg_at_10": 0.19760864171748127,
+              "ndcg_at_30": 0.2675162189093484,
+              "logloss": 0.07473105656574353,
+              "feeds": 14423,
+              "candidates": 1389971
+            }
+          ],
+          "seconds": 2818.6336227089996,
+          "peak_ram_gib": 5.3096771240234375,
+          "parameters": 93097
+        }
+      },
+      "feeds": 14423,
+      "candidates": 1389971,
+      "difference": 0.0013657683615707634,
+      "paired_user_bootstrap_95pct": [
+        0.0001972511651847787,
+        0.0025420503491810262
+      ],
+      "slice_by_history": [
+        {
+          "slice": "1-32",
+          "feeds": 873,
+          "difference": 0.0008403011640577449
+        },
+        {
+          "slice": "33-256",
+          "feeds": 13356,
+          "difference": 0.0012215261973259684
+        },
+        {
+          "slice": "empty",
+          "feeds": 194,
+          "difference": 0.013660774593953942
+        }
+      ],
+      "limitations": "One training seed per pair; same full val used for selection and evaluation; bootstrap conditional on fixed models."
+    },
+    "123": {
+      "runs": {
+        "control": {
+          "config": {
+            "train_feeds": 50000,
+            "val_feeds": 0,
+            "epochs": 5,
+            "batch_size": 2,
+            "threads": 4,
+            "seed": 123,
+            "width": 64,
+            "layers": 2,
+            "dropout": 0.1,
+            "learning_rate": 0.001,
+            "weight_decay": 0.0001,
+            "variant": "control",
+            "device": "cpu",
+            "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+          },
+          "metrics": {
+            "epoch": 4,
+            "train_logloss": 0.09667583823902866,
+            "ndcg": 0.333784505667662,
+            "ndcg_at_10": 0.19583365299375458,
+            "ndcg_at_30": 0.265586915150139,
+            "logloss": 0.07568080833167415,
+            "feeds": 14423,
+            "candidates": 1389971
+          },
+          "history": [
+            {
+              "epoch": 1,
+              "train_logloss": 0.0985115135032298,
+              "ndcg": 0.33092593498582656,
+              "ndcg_at_10": 0.1921967759276795,
+              "ndcg_at_30": 0.26187236055385926,
+              "logloss": 0.07878748464364761,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 2,
+              "train_logloss": 0.09718276997435976,
+              "ndcg": 0.3323135366626229,
+              "ndcg_at_10": 0.19424089072792683,
+              "ndcg_at_30": 0.26420641916428045,
+              "logloss": 0.07488825834286712,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 3,
+              "train_logloss": 0.0968786792354675,
+              "ndcg": 0.33183909464750977,
+              "ndcg_at_10": 0.19393381079356628,
+              "ndcg_at_30": 0.2637743004248874,
+              "logloss": 0.07579875657057736,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 4,
+              "train_logloss": 0.09667583823902866,
+              "ndcg": 0.333784505667662,
+              "ndcg_at_10": 0.19583365299375458,
+              "ndcg_at_30": 0.265586915150139,
+              "logloss": 0.07568080833167415,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 5,
+              "train_logloss": 0.09647389463462014,
+              "ndcg": 0.32791894820977363,
+              "ndcg_at_10": 0.18818513439664863,
+              "ndcg_at_30": 0.25821901845418666,
+              "logloss": 0.07512524137512584,
+              "feeds": 14423,
+              "candidates": 1389971
+            }
+          ],
+          "seconds": 3508.211072083999,
+          "peak_ram_gib": 4.79449462890625,
+          "parameters": 93097
+        },
+        "history": {
+          "config": {
+            "train_feeds": 50000,
+            "val_feeds": 0,
+            "epochs": 5,
+            "batch_size": 2,
+            "threads": 4,
+            "seed": 123,
+            "width": 64,
+            "layers": 2,
+            "dropout": 0.1,
+            "learning_rate": 0.001,
+            "weight_decay": 0.0001,
+            "variant": "history",
+            "device": "cpu",
+            "data": "/Users/artemgolubev/Programming/Avito ML Cup/data/competition"
+          },
+          "metrics": {
+            "epoch": 4,
+            "train_logloss": 0.09661921133899411,
+            "ndcg": 0.333789854394122,
+            "ndcg_at_10": 0.19664353736405965,
+            "ndcg_at_30": 0.2656012077137559,
+            "logloss": 0.07537223109297796,
+            "feeds": 14423,
+            "candidates": 1389971
+          },
+          "history": [
+            {
+              "epoch": 1,
+              "train_logloss": 0.09849260271847823,
+              "ndcg": 0.33115645684967954,
+              "ndcg_at_10": 0.1927501114033879,
+              "ndcg_at_30": 0.26178305608567193,
+              "logloss": 0.0795428550446698,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 2,
+              "train_logloss": 0.09717203617099437,
+              "ndcg": 0.33331652394952194,
+              "ndcg_at_10": 0.19521428519437053,
+              "ndcg_at_30": 0.2653372824246701,
+              "logloss": 0.0748848950698964,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 3,
+              "train_logloss": 0.09679416653343165,
+              "ndcg": 0.33225734569560533,
+              "ndcg_at_10": 0.19392314750725925,
+              "ndcg_at_30": 0.26413279250882965,
+              "logloss": 0.07590505874377425,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 4,
+              "train_logloss": 0.09661921133899411,
+              "ndcg": 0.333789854394122,
+              "ndcg_at_10": 0.19664353736405965,
+              "ndcg_at_30": 0.2656012077137559,
+              "logloss": 0.07537223109297796,
+              "feeds": 14423,
+              "candidates": 1389971
+            },
+            {
+              "epoch": 5,
+              "train_logloss": 0.09640185037924559,
+              "ndcg": 0.3314153585380387,
+              "ndcg_at_10": 0.19269331425434044,
+              "ndcg_at_30": 0.2620971670104165,
+              "logloss": 0.07487118848952211,
+              "feeds": 14423,
+              "candidates": 1389971
+            }
+          ],
+          "seconds": 3381.705664125002,
+          "peak_ram_gib": 4.7593536376953125,
+          "parameters": 93097
+        }
+      },
+      "feeds": 14423,
+      "candidates": 1389971,
+      "difference": 5.348726463240156e-06,
+      "paired_user_bootstrap_95pct": [
+        -0.0013287473146615556,
+        0.001316506893979569
+      ],
+      "slice_by_history": [
+        {
+          "slice": "1-32",
+          "feeds": 873,
+          "difference": 0.0003415347093505638
+        },
+        {
+          "slice": "33-256",
+          "feeds": 13356,
+          "difference": -4.623961239697127e-05
+        },
+        {
+          "slice": "empty",
+          "feeds": 194,
+          "difference": 0.002044129606650589
+        }
+      ],
+      "limitations": "One training seed per pair; same full val used for selection and evaluation; bootstrap conditional on fixed models."
+    }
+  },
+  "checks": {
+    "all_source_hashes_identical_and_current": true,
+    "same_selected_input_parts": true,
+    "configs_differ_only_in_seed_and_variant": true,
+    "tests_passed": 20
+  },
+  "limitations": [
+    "Two seeds only",
+    "Same full val used for epoch selection and evaluation",
+    "Mean vector and missing-history flag evaluated together",
+    "No ensemble or private/test quality measured"
+  ]
+}

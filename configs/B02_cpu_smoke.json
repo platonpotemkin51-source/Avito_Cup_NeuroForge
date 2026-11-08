@@ -1,0 +1,13 @@
+{
+  "train_feeds": 200,
+  "val_feeds": 100,
+  "epochs": 2,
+  "batch_size": 2,
+  "threads": 4,
+  "seed": 42,
+  "width": 64,
+  "layers": 2,
+  "dropout": 0.1,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001
+}
